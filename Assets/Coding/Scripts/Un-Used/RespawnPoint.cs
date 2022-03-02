@@ -39,7 +39,7 @@ public class RespawnPoint : MonoBehaviour
             }
 
             mySR.color = ActiveColor;
-            PC.RespawnPoint = transform.position;
+            //PC.RespawnPoint = transform.position;
         }
     }
 }

@@ -18,6 +18,8 @@ public class OneWayPlatform : MonoBehaviour
     private PlatformEffector2D myEffector;
     public float waitTime;
 
+    private KeyCode descendKey = KeyCode.S;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +29,17 @@ public class OneWayPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxisRaw("Vertical") >= 0)
+        if (!Input.GetKey(descendKey))
         {
             myEffector.rotationalOffset = 0;
             waitTime = 0.5f;
         }
 
-        if (Input.GetAxisRaw("Vertical") < 0)
+        if (Input.GetKey(descendKey))
         {
             if (waitTime < 0)
             {
                 myEffector.rotationalOffset = 180f;
-                waitTime = 0.5f;
             }
             else
             {
@@ -47,3 +48,4 @@ public class OneWayPlatform : MonoBehaviour
         }
     }
 }
+

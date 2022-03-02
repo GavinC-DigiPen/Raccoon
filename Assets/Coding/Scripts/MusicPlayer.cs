@@ -46,20 +46,20 @@ public class MusicPlayer : MonoBehaviour
         myAud = GetComponent<AudioSource>();
 
         //play first track
-        FindRightTrack();
-        
+        StartCoroutine(FindRightTrack());
+
     }
 
     private void OnLevelWasLoaded(int level)
     {
-        
-        FindRightTrack();
+        StartCoroutine(FindRightTrack());
     }
 
     //This should check if the correct music is playing on any given level, and allow levels that share a track to keep playing rather than start and stop
-    private void FindRightTrack()
+    private IEnumerator FindRightTrack()
     {
-        
+        yield return new WaitForSeconds(0.01f);
+
         foreach (LevelTrack LT in levelTracks)
         {
             if (SceneManager.GetActiveScene().name == LT.LevelName)

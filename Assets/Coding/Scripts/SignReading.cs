@@ -1,15 +1,21 @@
-/*****************************************
- * Edited by: Ryan Scheppler
- * Last Edited: 1/27/2021
- * Description: Add to an object with a trigger collider to detect when to turn on a different text object or not.
- * *************************************/
+﻿//------------------------------------------------------------------------------
+//
+// File Name:	SignReading.cs
+// Author(s):	Ryan Schepplar
+//              Gavin Cooper (gavin.cooper)
+// Project:	    Raccoon
+// Course:	    WANIC VGP2
+//
+// Copyright ©️ 2022 DigiPen (USA) Corporation.
+//
+//------------------------------------------------------------------------------
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SignReading : MonoBehaviour
 {
-    public GameObject Text;
+    public GameObject hidenObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +32,7 @@ public class SignReading : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Text.SetActive(true);
+            hidenObject.SetActive(true);
         }
     }
 
@@ -34,7 +40,7 @@ public class SignReading : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Text.SetActive(false);
+            hidenObject.SetActive(false);
         }
     }
 }
