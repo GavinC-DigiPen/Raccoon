@@ -1,8 +1,14 @@
-/*****************************************
- * Edited by: Ryan Scheppler
- * Last Edited: 1/27/2021
- * Description: Should be on it's own game object likely alone, only one will exist at a time, handles variables and events more global affecting
- * *************************************/
+﻿//------------------------------------------------------------------------------
+//
+// File Name:	GameManager.cs
+// Author(s):	Ryan Schepplar
+//              Gavin Cooper (gavin.cooper)
+// Project:	    Raccoon
+// Course:	    WANIC VGP2
+//
+// Copyright ©️ 2022 DigiPen (USA) Corporation.
+//
+//------------------------------------------------------------------------------
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +19,8 @@ public class GameManager : MonoBehaviour
     //allow this component to be grabbed from anywhere and make sure only one exists
     public static GameManager Instance;
 
-    //event to listen to for the score change
+    // The score
     public static UnityEvent ScoreUpdate = new UnityEvent();
-
-    //score property and int behind it
     private static int _score = 0;
     public static int score
     {
@@ -31,8 +35,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-    //when made make sure this is the only manager, and make the manager persistant through levels
+    // When made make sure this is the only manager, and make the manager persistant through levels
     private void Awake()
     {
         if (Instance == null)
@@ -56,13 +59,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+
     }
 
-    public static void ResetGame()
+    // Reset the score
+    public static void ResetScore()
     {
         score = 0;
     }
