@@ -35,6 +35,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public static UnityEvent MaxScoreUpdate = new UnityEvent();
+    private static int _maxScore = 0;
+    public static int maxScore
+    {
+        get
+        {
+            return _maxScore;
+        }
+        set
+        {
+            _maxScore = value;
+            MaxScoreUpdate.Invoke();
+        }
+    }
+
     // When made make sure this is the only manager, and make the manager persistant through levels
     private void Awake()
     {
@@ -53,7 +68,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
