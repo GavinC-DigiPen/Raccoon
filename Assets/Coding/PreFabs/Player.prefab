@@ -151,7 +151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07, y: 0.06}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -179,7 +179,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 5
   m_Material: {fileID: 6200000, guid: 8a4a9e2428d774a4190f3646d6d43e1b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 0
@@ -194,8 +194,9 @@ AudioSource:
   m_GameObject: {fileID: 8397047256095260017}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 61233224999947987, guid: 4a712e0e5a8a4554fb944ee1894c9dc7,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -293,22 +294,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe466d42c86e9504bacaa4e4e6114907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  airSpeed: 25
+  speed: 50
+  sprintSpeed: 75
+  airSpeed: 10
+  airSprintSpeed: 25
   groundCheck: {fileID: 8397047255048113365}
   checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1280
-  extraJumps: 1
-  jumpForce: 8
+  jumpForce: 10
   jumpTime: 0.3
   groundDrag: 10
-  airDrag: 0.3
+  airDrag: 3
   jumpNoise: {fileID: 8300000, guid: 39e815db8f7692a44ba7653e4d249281, type: 3}
-  whatIsLadder:
-    serializedVersion: 2
-    m_Bits: 1024
-  ladderDist: 1
-  climbSpeed: 50
-  RespawnPoint: {x: 0, y: 0, z: 0}
+  walkNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
+  runNoise: {fileID: 8300000, guid: 2b0f4165120d4fe47be3ab1f5e4b7ff6, type: 3}
