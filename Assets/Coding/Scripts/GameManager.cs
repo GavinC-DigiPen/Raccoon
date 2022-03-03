@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     //allow this component to be grabbed from anywhere and make sure only one exists
     public static GameManager Instance;
 
-    // The score
+    // Variables
     public static UnityEvent ScoreUpdate = new UnityEvent();
     private static int _score = 0;
     public static int score
@@ -32,6 +32,36 @@ public class GameManager : MonoBehaviour
         {
             _score = value;
             ScoreUpdate.Invoke();
+        }
+    }
+
+    public static UnityEvent MaxScoreUpdate = new UnityEvent();
+    private static int _maxScore = 0;
+    public static int maxScore
+    {
+        get
+        {
+            return _maxScore;
+        }
+        set
+        {
+            _maxScore = value;
+            MaxScoreUpdate.Invoke();
+        }
+    }
+
+    public static UnityEvent InWallUpdate = new UnityEvent();
+    private static bool _inWall = false;
+    public static bool inWall
+    {
+        get
+        {
+            return _inWall;
+        }
+        set
+        {
+            _inWall = value;
+            InWallUpdate.Invoke();
         }
     }
 
@@ -49,23 +79,4 @@ public class GameManager : MonoBehaviour
         }
         
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // Reset the score
-    public static void ResetScore()
-    {
-        score = 0;
-    }
-
 }

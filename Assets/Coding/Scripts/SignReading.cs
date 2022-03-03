@@ -16,21 +16,12 @@ using UnityEngine;
 public class SignReading : MonoBehaviour
 {
     public GameObject hidenObject;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private bool isActive = true;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player") && isActive)
         {
             hidenObject.SetActive(true);
         }
@@ -42,5 +33,10 @@ public class SignReading : MonoBehaviour
         {
             hidenObject.SetActive(false);
         }
+    }
+
+    public void IsActive(bool value)
+    {
+        isActive = value;
     }
 }
