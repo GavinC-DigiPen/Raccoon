@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
 {
     //speed and movement variables
     public float speed;
+    public float sprintSpeed;
     public float airSpeed;
+    public float airSprintSpeed;
     private int direction;
     //grab this to adjust physics
     private Rigidbody2D myRb;
@@ -43,6 +45,8 @@ public class PlayerController : MonoBehaviour
 
     private AudioSource myAud;
     public AudioClip jumpNoise;
+    public AudioClip walkNoise;
+    public AudioClip runNoise;
 
     //animation
     private Animator myAnim;
@@ -50,6 +54,7 @@ public class PlayerController : MonoBehaviour
     private KeyCode leftKey = KeyCode.A;
     private KeyCode rightKey = KeyCode.D;
     private KeyCode jumpKey = KeyCode.Space;
+    private KeyCode sprintKey = KeyCode.LeftShift;
 
 
     // Start is called before the first frame update
@@ -66,7 +71,11 @@ public class PlayerController : MonoBehaviour
         //check if jump can be triggered
         if (Input.GetKeyDown(jumpKey) && jumpPressed == false && isGrounded == true)
         {
-            myAud.PlayOneShot(jumpNoise);
+            myAud.Stop();
+            myAud.clip = jumpNoise;
+            myAud.loop = false;
+            myAud.Play();
+
             myRb.drag = airDrag;
             myRb.velocity = (Vector2.up * jumpForce) + new Vector2(myRb.velocity.x, 0);
             jumpPressed = true;
@@ -116,25 +125,60 @@ public class PlayerController : MonoBehaviour
             direction = 0;
         }
 
-        //animator settings
         if(direction == 0)
         {
             myAnim.SetBool("Moving", false);
+
+            if (isGrounded && !jumpPressed)
+            {
+                myAud.Stop();
+            }
         }
         else
         {
             myAnim.SetBool("Moving", true);
-        }
 
-        if (isGrounded && !jumpPressed)
-        {
-            myRb.drag = groundDrag;
-            myRb.AddForce(new Vector2(direction * speed , 0));
-        }
-        else
-        {
-            myRb.drag = airDrag;
-            myRb.AddForce(new Vector2(direction * airSpeed  , 0));
+            if (isGrounded && !jumpPressed && Input.GetKey(sprintKey))
+            {
+                if (myAud.clip.name != runNoise.name)
+                {
+                    myAud.Stop();
+                    myAud.clip = runNoise;
+                    myAud.loop = true;
+                    myAud.Play();
+                }
+
+
+                myRb.drag = groundDrag;
+                myRb.AddForce(new Vector2(direction * sprintSpeed, 0));
+                myAnim.SetBool("Fast", true);
+            }
+            else if (isGrounded && !jumpPressed)
+            {
+                if (myAud.clip.name != walkNoise.name)
+                {
+                    myAud.Stop();
+                    myAud.clip = walkNoise;
+                    myAud.loop = true;
+                    myAud.Play();
+                }
+
+                myRb.drag = groundDrag;
+                myRb.AddForce(new Vector2(direction * speed, 0));
+                myAnim.SetBool("Fast", false);
+            }
+            else if (Input.GetKey(sprintKey))
+            {
+                myRb.drag = airDrag;
+                myRb.AddForce(new Vector2(direction * airSprintSpeed, 0));
+                myAnim.SetBool("Fast", true);
+            }
+            else
+            {
+                myRb.drag = airDrag;
+                myRb.AddForce(new Vector2(direction * airSpeed, 0));
+                myAnim.SetBool("Fast", false);
+            }
         }
 
         // Flip charcater
@@ -144,5 +188,12 @@ public class PlayerController : MonoBehaviour
             Scaler.x = direction;
             transform.localScale = Scaler;
         }
+
+        // Play sound if not playing
+        if (!myAud.isPlaying && isGrounded)
+        {
+            myAud.Play();
+        }
+
     }
 }
