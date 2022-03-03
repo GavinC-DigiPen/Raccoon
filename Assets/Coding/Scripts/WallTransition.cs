@@ -14,10 +14,10 @@ public class WallTransition : MonoBehaviour
     private GameObject enemy;
     private bool inWall = true;
     private Tilemap tileSet;
-    private Color defualtColor = new Color(1, 1, 1, 1);
-    private Color defualtEnemyColor = new Color(1, 0.3f, 0.3f, 1);
-    private Color transparentColor = new Color(1, 1, 1, 0.3f);
-    private Color transparentEnemyColor = new Color(1, 0.3f, 0.3f, 0.3f);
+    private Color defualtGridColor;
+    private Color defualtEnemyColor;
+    private Color transparentGridColor;
+    private Color transparentEnemyColor;
     private float timer = 0;
     public float countdown = 1;
 
@@ -51,20 +51,23 @@ public class WallTransition : MonoBehaviour
                     //checks if child is a Grid
                     if (layer1.transform.GetChild(i).gameObject.CompareTag("Grid"))
                     {
-                        //sets the loaction of grid
+                        //sets the loaction of grid, and its colors
                         grid = layer1.gameObject.transform.GetChild(i).gameObject;
+                        defualtGridColor = grid.GetComponent<Tilemap>().color;
+                        transparentGridColor = new Color(defualtGridColor.r, defualtGridColor.g, defualtGridColor.b, 0.3f);
+
 
                         //if it is a Grid then change the Alpha value on each tilemap within grid
                         for (int j = 0; j < grid.transform.childCount; ++j)
                         {
                             if (inWall)
                             {
-                                grid.transform.GetChild(j).GetComponent<Tilemap>().color = defualtColor;
+                                grid.transform.GetChild(j).GetComponent<Tilemap>().color = defualtGridColor;
                                 grid.transform.GetChild(j).GetComponent<TilemapCollider2D>().enabled = true;
                             }
                             else
                             {
-                                grid.transform.GetChild(j).GetComponent<Tilemap>().color = transparentColor;
+                                grid.transform.GetChild(j).GetComponent<Tilemap>().color = transparentGridColor;
                                 grid.transform.GetChild(j).GetComponent<TilemapCollider2D>().enabled = false;
                             }
                         }
@@ -73,8 +76,10 @@ public class WallTransition : MonoBehaviour
                     //if child of parent(layer1) is an enemy
                     if (layer1.transform.GetChild(i).gameObject.CompareTag("Enemy"))
                     {
-                        //sets the loaction of enemy
+                        //sets the loaction of enemy and its colors
                         enemy = layer1.gameObject.transform.GetChild(i).gameObject;
+                        defualtEnemyColor = enemy.GetComponent<SpriteRenderer>().color;
+                        transparentEnemyColor = new Color(defualtEnemyColor.r, defualtEnemyColor.g, defualtEnemyColor.b, 0.3f);
 
                         if (inWall)
                         {
