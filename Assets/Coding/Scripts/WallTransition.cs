@@ -35,7 +35,7 @@ private void Update()
                 wall.SetActive(!wall.activeInHierarchy);
                 for (int i = 0; i < 2; ++i)
                 {
-                    grid.gameObject.transform.GetChild(i).gameObject.;
+                    //grid.gameObject.transform.GetChild(i).gameObject.;
                 }
                 timer = 0;
             }

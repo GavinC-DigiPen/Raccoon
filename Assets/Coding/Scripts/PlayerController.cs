@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
         //set animators on ground
         myAnim.SetBool("OnGround", isGrounded);
 
-        //horizontal movement
+        // Direction
         if (Input.GetKeyDown(leftKey))
         {
             direction = -1;
@@ -125,7 +125,14 @@ public class PlayerController : MonoBehaviour
             direction = 0;
         }
 
-        if(direction == 0)
+        // Play sound if not playing
+        if (!myAud.isPlaying && isGrounded)
+        {
+            myAud.Play();
+        }
+
+        // Movement
+        if (direction == 0)
         {
             myAnim.SetBool("Moving", false);
 
@@ -188,12 +195,5 @@ public class PlayerController : MonoBehaviour
             Scaler.x = direction;
             transform.localScale = Scaler;
         }
-
-        // Play sound if not playing
-        if (!myAud.isPlaying && isGrounded)
-        {
-            myAud.Play();
-        }
-
     }
 }
