@@ -16,21 +16,21 @@ using UnityEngine.UI;
 public class ScoreBar : MonoBehaviour
 {
     private RectTransform bar;
-    private Image one;
-    private Image two;
-    private Image three;
+    private Image imageOne;
+    private Image imageTwo;
+    private Image imageThree;
 
     // Start is called before the first frame update
     void Start()
     {
         bar = gameObject.transform.GetChild(0).GetChild(2).GetComponent<RectTransform>();
-        one = gameObject.transform.GetChild(0).GetChild(3).GetComponent<Image>();
-        two = gameObject.transform.GetChild(0).GetChild(4).GetComponent<Image>();
-        three = gameObject.transform.GetChild(0).GetChild(5).GetComponent<Image>();
+        imageOne = gameObject.transform.GetChild(0).GetChild(3).GetComponent<Image>();
+        imageTwo = gameObject.transform.GetChild(0).GetChild(4).GetComponent<Image>();
+        imageThree = gameObject.transform.GetChild(0).GetChild(5).GetComponent<Image>();
 
-        one.color = Color.black;
-        two.color = Color.black;
-        three.color = Color.black;
+        imageOne.color = Color.black;
+        imageTwo.color = Color.black;
+        imageThree.color = Color.black;
 
         StartCoroutine(WaitForLoading());
     }
@@ -46,6 +46,7 @@ public class ScoreBar : MonoBehaviour
             maxScore += collectables[i].points;
         }
         GameManager.maxScore = maxScore;
+        GameManager.score = 0;
 
         UpdateBar();
         GameManager.ScoreUpdate.AddListener(UpdateBar);
@@ -69,15 +70,15 @@ public class ScoreBar : MonoBehaviour
     {
         if (GameManager.score >= GameManager.maxScore * (1.0f / 3.0f) - 1f)
         {
-            one.color = Color.white;
+            imageOne.color = Color.white;
         }
         if (GameManager.score >= GameManager.maxScore * (2.0f / 3.0f) - 1f)
         {
-            two.color = Color.white;
+            imageTwo.color = Color.white;
         }
         if (GameManager.score == GameManager.maxScore)
         {
-            three.color = Color.white;
+            imageThree.color = Color.white;
         }
     }
 }

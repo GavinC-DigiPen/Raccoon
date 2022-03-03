@@ -33,11 +33,11 @@ public class LevelExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
 
-        if (GameManager.score > 0)
+        if (GameManager.score >= GameManager.maxScore * (1.0f / 3.0f) - 1f)
         {
             popUpScript.IsActive(true);
+
         }
         else
         {
@@ -50,14 +50,14 @@ public class LevelExit : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (GameManager.score > 0)
+            if (GameManager.score >= GameManager.maxScore * (1.0f / 3.0f) - 1f)
             {
                 if (Input.GetKey(interactKey))
                 {
+                    timer += Time.deltaTime;
                     if (timer > timeToExit)
                     {
                         SceneManager.LoadScene(sceneName);
-                        timer = 0;
                     }
                 }
             }

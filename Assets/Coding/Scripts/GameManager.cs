@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     //allow this component to be grabbed from anywhere and make sure only one exists
     public static GameManager Instance;
 
-    // The score
+    // Variables
     public static UnityEvent ScoreUpdate = new UnityEvent();
     private static int _score = 0;
     public static int score
@@ -50,6 +50,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public static UnityEvent InWallUpdate = new UnityEvent();
+    private static bool _inWall = false;
+    public static bool inWall
+    {
+        get
+        {
+            return _inWall;
+        }
+        set
+        {
+            _inWall = value;
+            InWallUpdate.Invoke();
+        }
+    }
+
     // When made make sure this is the only manager, and make the manager persistant through levels
     private void Awake()
     {
@@ -64,23 +79,4 @@ public class GameManager : MonoBehaviour
         }
         
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // Reset the score
-    public static void ResetScore()
-    {
-        score = 0;
-    }
-
 }
