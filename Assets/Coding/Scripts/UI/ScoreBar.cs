@@ -24,9 +24,9 @@ public class ScoreBar : MonoBehaviour
     void Start()
     {
         bar = gameObject.transform.GetChild(0).GetChild(2).GetComponent<RectTransform>();
-        one = gameObject.transform.GetChild(1).GetComponent<Image>();
-        two = gameObject.transform.GetChild(2).GetComponent<Image>();
-        three = gameObject.transform.GetChild(3).GetComponent<Image>();
+        one = gameObject.transform.GetChild(0).GetChild(3).GetComponent<Image>();
+        two = gameObject.transform.GetChild(0).GetChild(4).GetComponent<Image>();
+        three = gameObject.transform.GetChild(0).GetChild(5).GetComponent<Image>();
 
         one.color = Color.black;
         two.color = Color.black;
