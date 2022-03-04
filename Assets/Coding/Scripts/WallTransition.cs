@@ -1,3 +1,8 @@
+/*********************************
+ * By: Andrew kitzan
+ * last edit: 3/3/2022
+ * desc: controlls all the stuff when the player goes in the wall
+ * ******************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,7 +32,6 @@ public class WallTransition : MonoBehaviour
     void Start()
     {
         wall.SetActive(false);
-        
     }
 
 

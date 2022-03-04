@@ -1,3 +1,9 @@
+/*********************************
+ * By: Andrew kitzan
+ * last edit: 3/3/2022
+ * desc: plays the music in the game
+ * ******************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,6 +36,7 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    //waits for music to finish
     private IEnumerator WaitForMusic()
     {
         yield return new WaitForSeconds(myAud.clip.length);
@@ -40,6 +47,7 @@ public class MusicManager : MonoBehaviour
         StartCoroutine(waitForCue());
     }
 
+    //waits for cue to finish
     private IEnumerator waitForCue()
     {
         yield return new WaitForSeconds(myAud.clip.length);
