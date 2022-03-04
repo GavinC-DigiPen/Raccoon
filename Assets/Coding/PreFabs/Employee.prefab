@@ -97,10 +97,10 @@ GameObject:
   - component: {fileID: 8973018844699965280}
   - component: {fileID: 8973018844699965281}
   - component: {fileID: 8973018844699965311}
-  - component: {fileID: 8973018844699965310}
+  - component: {fileID: 2383227607880139622}
   - component: {fileID: 8310156147950272227}
   m_Layer: 0
-  m_Name: PatrolEnemy
+  m_Name: Employee
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ Animator:
   m_GameObject: {fileID: 8973018844699965282}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4997b861987523f41843b384c3afc843, type: 2}
+  m_Controller: {fileID: 9100000, guid: 71d05753e78dfff46b7b77a1d8e1810d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -261,8 +261,8 @@ MonoBehaviour:
     type: 3}
   caughtIndicator: {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
   warningAudio: {fileID: 8300000, guid: 39e815db8f7692a44ba7653e4d249281, type: 3}
---- !u!61 &8973018844699965310
-BoxCollider2D:
+--- !u!60 &2383227607880139622
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -274,7 +274,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.9749005, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -284,9 +284,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.025105, y: 2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.50407386, y: -0.91633356}
+      - {x: -0.50687385, y: 0.6261512}
+      - {x: -2.636584, y: 0.6303107}
+      - {x: -2.6365843, y: -0.92023283}
 --- !u!82 &8310156147950272227
 AudioSource:
   m_ObjectHideFlags: 0

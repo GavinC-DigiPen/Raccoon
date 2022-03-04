@@ -2003,6 +2003,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5836953175235155598, guid: f22b0c24ff4a7e740913247c2534b856,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836953175235155598, guid: f22b0c24ff4a7e740913247c2534b856,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5836953176067866962, guid: f22b0c24ff4a7e740913247c2534b856,
         type: 3}
       propertyPath: m_Name

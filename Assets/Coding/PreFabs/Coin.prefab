@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7855004461276386710}
   - component: {fileID: 7855004461276386711}
-  - component: {fileID: 7855004461276386712}
   - component: {fileID: 7855004461276386708}
   - component: {fileID: 7855004461276386709}
   m_Layer: 0
@@ -74,8 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1671283345461455480, guid: 950f927dbc9d7d146bfeab77e560f475,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7855004461276386712
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7855004461276386713}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8516e3a84dfca0c4dabb9412b40c852d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!70 &7855004461276386708
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -133,7 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b50c96ac644af43b2e36545e4f0a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 10
-  PickUpNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
+  points: 1
+  food:
+  - foodSprite: {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
+    foodPickUpNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
   SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
     type: 3}

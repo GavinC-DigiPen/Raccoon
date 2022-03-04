@@ -15,19 +15,28 @@ using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
+    [Tooltip("The left x limit")]
     public float xLocationLeft;
+    [Tooltip("The right x limit")]
     public float xLocationRight;
+    [Tooltip("The margine of error for being close enough to xLocations")]
     public float marginOfError = 0.25f;
+    [Tooltip("The enemies speed")]
     public float speed = 20.0f;
     [Tooltip("Name of the scene you want this script to load when caught")]
     public string sceneName;
-    public float timeToCapture = 5.0f;
+    [Tooltip("Time before player is captured")]
+    public float timeToCapture = 0.5f;
+    [Tooltip("The sprite indicator that warns the player they are being seen")]
     public Sprite warningIndicator;
+    [Tooltip("The sprite indicator that tells the player they are caught")]
     public Sprite caughtIndicator;
+    [Tooltip("The aduio inidcator that warns the player they are being seen")]
     public AudioClip warningAudio;
 
     private Rigidbody2D myRB;
     private AudioSource myAud;
+    private Animator myAnim;
     private GameObject indicator;
 
     private bool isRight = false;
@@ -39,6 +48,8 @@ public class EnemyAI : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody2D>();
         myAud = GetComponent<AudioSource>(); ;
+        myAnim = GetComponent<Animator>();
+
         indicator = gameObject.transform.GetChild(0).gameObject;
 
         indicator.SetActive(false);
@@ -86,6 +97,7 @@ public class EnemyAI : MonoBehaviour
             }
 
             seesRaccoon = true;
+            myAnim.SetBool("Moving", false);
             timer += Time.deltaTime;
             if (timer > timeToCapture)
             {
@@ -107,6 +119,7 @@ public class EnemyAI : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             seesRaccoon = false;
+            myAnim.SetBool("Moving", true);
             timer = 0;
             indicator.SetActive(false);
         }
