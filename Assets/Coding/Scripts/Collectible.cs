@@ -38,6 +38,9 @@ public class Collectible : MonoBehaviour
     {
         activeIndex = Random.Range(0, food.Length - 1);
         GetComponent<SpriteRenderer>().sprite = food[activeIndex].foodSprite;
+
+        Color c = GetComponent<SpriteRenderer>().color;
+        c = new Color(c.r, c.g, c.b, 0.5f);
     }
 
     // When collectible collides with object

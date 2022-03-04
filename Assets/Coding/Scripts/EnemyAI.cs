@@ -58,6 +58,7 @@ public class EnemyAI : MonoBehaviour
     // FixedUpdate is called once per physics frame
     void FixedUpdate()
     {
+        GameManager.raccoonSeen = seesRaccoon;
         if (!seesRaccoon)
         {
             if (isRight)
@@ -94,6 +95,7 @@ public class EnemyAI : MonoBehaviour
             if (!seesRaccoon)
             {
                 myAud.PlayOneShot(warningAudio);
+                StartCoroutine(RaccoonGaspAudio());
             }
 
             seesRaccoon = true;
@@ -123,6 +125,13 @@ public class EnemyAI : MonoBehaviour
             timer = 0;
             indicator.SetActive(false);
         }
+    }
+
+    // The audio for the raccoon gasping
+    private IEnumerator RaccoonGaspAudio()
+    {
+        yield return new WaitForSeconds(0.5f);
+        // Play gasp
     }
 
     // End the game

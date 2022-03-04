@@ -65,6 +65,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public static UnityEvent RaccoonSeenUpdate = new UnityEvent();
+    private static bool _raccoonSeen = false;
+    public static bool raccoonSeen
+    {
+        get
+        {
+            return _raccoonSeen;
+        }
+        set
+        {
+            _raccoonSeen = value;
+            RaccoonSeenUpdate.Invoke();
+        }
+    }
+
     // When made make sure this is the only manager, and make the manager persistant through levels
     private void Awake()
     {
