@@ -12,7 +12,7 @@ public class WallTransition : MonoBehaviour
     public GameObject layer1;
     private GameObject grid;
     private GameObject enemy;
-    private bool inWall = true;
+    private bool inWall = false;
     private Tilemap tileSet;
     private Color defualtGridColor;
     private Color defualtEnemyColor;
@@ -75,6 +75,7 @@ public class WallTransition : MonoBehaviour
             {
                 wall.SetActive(!wall.activeInHierarchy);
                 inWall = !inWall;
+                GameManager.inWall = inWall;
 
                 //loops through all children inside parent(layer1)
                 for (int i = 0; i < layer1.transform.childCount; ++i)
@@ -91,7 +92,7 @@ public class WallTransition : MonoBehaviour
                         {
                             grid = layer1.gameObject.transform.GetChild(i).gameObject;
 
-                            if (inWall)
+                            if (!inWall)
                             {
                                 grid.transform.GetChild(j).GetComponent<Tilemap>().color = defualtGridColor;
                                 grid.transform.GetChild(j).GetComponent<TilemapCollider2D>().enabled = true;
@@ -111,7 +112,7 @@ public class WallTransition : MonoBehaviour
                         //sets the loaction of enemy and its colors
                         enemy = layer1.gameObject.transform.GetChild(i).gameObject;
 
-                        if (inWall)
+                        if (!inWall)
                         {
                             enemy.GetComponent<SpriteRenderer>().color = defualtEnemyColor;
                             enemy.GetComponent<BoxCollider2D>().enabled = true;
@@ -129,7 +130,7 @@ public class WallTransition : MonoBehaviour
                     Collectible[] collectables = FindObjectsOfType<Collectible>();
                     for (int j = 0; j < collectables.Length; j++)
                     {
-                        if (inWall)
+                        if (!inWall)
                         {
                             Color CC = collectables[j].gameObject.GetComponent<SpriteRenderer>().color;
                             CC = new Color(CC.r, CC.g, CC.b, 0.3f);
