@@ -135,6 +135,7 @@ public class PlayerController : MonoBehaviour
         if (direction == 0)
         {
             myAnim.SetBool("Moving", false);
+            myAnim.SetBool("Fast", false);
 
             if (isGrounded && !jumpPressed)
             {
