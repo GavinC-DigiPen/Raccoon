@@ -39,6 +39,7 @@ public class WallTransition : MonoBehaviour
         {
             for (int i = 0; i < layer1.transform.childCount; ++i)
             {
+
                 if (layer1.transform.GetChild(i).gameObject.CompareTag("Grid"))
                 {
                     grid = layer1.gameObject.transform.GetChild(i).gameObject;
@@ -113,10 +114,32 @@ public class WallTransition : MonoBehaviour
                         if (inWall)
                         {
                             enemy.GetComponent<SpriteRenderer>().color = defualtEnemyColor;
+                            enemy.GetComponent<BoxCollider2D>().enabled = true;
+                            enemy.GetComponent<PolygonCollider2D>().enabled = true;
                         }
                         else
                         {
                             enemy.GetComponent<SpriteRenderer>().color = transparentEnemyColor;
+                            enemy.GetComponent<BoxCollider2D>().enabled = false;
+                            enemy.GetComponent<PolygonCollider2D>().enabled = false;
+                        }
+                    }
+
+                    //collectables
+                    Collectible[] collectables = FindObjectsOfType<Collectible>();
+                    for (int j = 0; j < collectables.Length; j++)
+                    {
+                        if (inWall)
+                        {
+                            Color CC = collectables[j].gameObject.GetComponent<SpriteRenderer>().color;
+                            CC = new Color(CC.r, CC.g, CC.b, 0.3f);
+                            collectables[j].gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                        }
+                        else
+                        {
+                            Color CC = collectables[i].gameObject.GetComponent<SpriteRenderer>().color;
+                            CC = new Color(CC.r, CC.g, CC.b, 1);
+                            collectables[j].gameObject.GetComponent<BoxCollider2D>().enabled = false;
                         }
                     }
                 }
