@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 190080
+    totalSpriteSurfaceArea: 205760
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -65,6 +65,16 @@ SpriteAtlas:
   - {fileID: -3347984106645726015, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
   - {fileID: -6386380331874166012, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
   - {fileID: 4055577607036525942, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
+  - {fileID: -8492130648617609540, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: -3195690901542801848, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: -3344890479535941906, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: -4112398975924821772, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: -695008290102712648, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: -5218515349223671948, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: -7738276722306972652, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: -9146609327675045958, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: 4825199298689810359, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: 896416625506702327, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
   - {fileID: 7562716900497062, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -7154765599751142846, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: 2984065513281883999, guid: f99a3879764308a4d92d87d841829522, type: 3}
@@ -268,6 +278,46 @@ SpriteAtlas:
   - {fileID: 1018328791618719094, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 6731733094262721628, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 7482667652216324306, guid: fc79788efd7df2e4d811c9c295d400ef, type: 3}
+  - {fileID: -4959426045862233016, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -2829797316416091802, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 3274537027674273908, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -3546539315746125440, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -8989524413066788619, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 4109813983346067658, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -4831139005558488488, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -4720229805244784136, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -2978233297484083455, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 4760360157715848810, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -8398767301875576304, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 3323272781270244056, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -7903457892609232385, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 2208453485379675966, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -5512279469950296067, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 496998616421987665, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 4394429122668299925, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 5386181006888145507, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -5532109956266654655, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -2380798637340055478, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -3512825882353125734, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 8409618352220716817, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -7573183735046291705, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 4550585178603628297, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -8562044996512240489, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -461900221891139717, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -8482491043827480289, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 1620248729164271606, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 2404954849789462768, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 7298698304762918735, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 6848216901824009292, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -504866569374966705, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -1188089864876870532, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -7489624029215891127, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 5480206024271543212, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 1630954456092411231, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -7929997092277629123, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -8335302239656459199, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -5586314176763587840, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: -2896977954361875101, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
   m_PackedSpriteNamesToIndex:
   - IsometricDiamond
   - Circle
@@ -284,6 +334,16 @@ SpriteAtlas:
   - FlyingSlimeIdle_0
   - FlyingSlimeIdle_3
   - FlyingSlimeIdle_2
+  - raccoon walk_8
+  - raccoon walk_9
+  - raccoon walk_0
+  - raccoon walk_1
+  - raccoon walk_2
+  - raccoon walk_3
+  - raccoon walk_4
+  - raccoon walk_5
+  - raccoon walk_6
+  - raccoon walk_7
   - cavesofgallet_tiles_0
   - cavesofgallet_tiles_1
   - cavesofgallet_tiles_2
@@ -487,6 +547,46 @@ SpriteAtlas:
   - tileset_95
   - tileset_94
   - Square
+  - Racoon game assets_63
+  - Racoon game assets_14
+  - Racoon game assets_65
+  - Racoon game assets_15
+  - Racoon game assets_16
+  - Racoon game assets_67
+  - Racoon game assets_66
+  - Racoon game assets_69
+  - Racoon game assets_13
+  - Racoon game assets_18
+  - Racoon game assets_76
+  - Racoon game assets_74
+  - Racoon game assets_75
+  - Racoon game assets_72
+  - Racoon game assets_73
+  - Racoon game assets_58
+  - Racoon game assets_38
+  - Racoon game assets_50
+  - Racoon game assets_51
+  - Racoon game assets_29
+  - Racoon game assets_32
+  - Racoon game assets_53
+  - Racoon game assets_43
+  - Racoon game assets_33
+  - Racoon game assets_30
+  - Racoon game assets_25
+  - Racoon game assets_40
+  - Racoon game assets_24
+  - Racoon game assets_27
+  - Racoon game assets_20
+  - Racoon game assets_22
+  - Racoon game assets_9
+  - Racoon game assets_8
+  - Racoon game assets_5
+  - Racoon game assets_4
+  - Racoon game assets_7
+  - Racoon game assets_6
+  - Racoon game assets_1
+  - Racoon game assets_0
+  - Racoon game assets_2
   m_RenderDataMap: {}
   m_Tag: Tiles
   m_IsVariant: 0
