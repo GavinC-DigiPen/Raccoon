@@ -28,6 +28,9 @@ public class WallTransition : MonoBehaviour
     private bool haveSet = false;
     public AudioClip enterWallSound;
     private AudioSource myAud;
+    private GameObject exit;
+    private Color defualtExitColor;
+    private Color transparentExitColor;
 
 
     // Start is called before the first frame update
@@ -58,7 +61,7 @@ public class WallTransition : MonoBehaviour
                     }
                 }
 
-                //if child of parent(layer1) is an enemy
+                //set enemy color
                 if (layer1.transform.GetChild(i).gameObject.CompareTag("Enemy"))
                 {
                     //sets the loaction of enemy and its colors
@@ -66,6 +69,14 @@ public class WallTransition : MonoBehaviour
                     defualtEnemyColor = enemy.GetComponent<SpriteRenderer>().color;
                     transparentEnemyColor = new Color(defualtEnemyColor.r, defualtEnemyColor.g, defualtEnemyColor.b, 0.3f);
 
+                }
+
+                //set exit color
+                if (layer1.transform.GetChild(i).gameObject.CompareTag("Exit"))
+                {
+                    exit = layer1.gameObject.transform.GetChild(i).gameObject;
+                    defualtExitColor = exit.GetComponent<SpriteRenderer>().color;
+                    transparentExitColor = new Color(defualtExitColor.r, defualtExitColor.g, defualtExitColor.b, 0.3f);
                 }
             }
             haveSet = true;
@@ -132,8 +143,24 @@ public class WallTransition : MonoBehaviour
                         }
                     }
 
-                    //collectables
-                    Collectible[] collectables = FindObjectsOfType<Collectible>();
+                    //if it is the exit
+                    if (layer1.transform.GetChild(i).gameObject.CompareTag("Exit"))
+                    {
+                        exit = layer1.gameObject.transform.GetChild(i).gameObject;
+                        if (!inWall)
+                        {
+                            exit.GetComponent<SpriteRenderer>().color = defualtExitColor;
+                            exit.GetComponent<BoxCollider2D>().enabled = true;
+                        }
+                        else
+                        {
+                            exit.GetComponent<SpriteRenderer>().color = transparentExitColor;
+                            exit.GetComponent<BoxCollider2D>().enabled = false;
+                        }
+                    }
+
+                        //collectables
+                        Collectible[] collectables = FindObjectsOfType<Collectible>();
                     for (int j = 0; j < collectables.Length; j++)
                     {
                         if (!inWall)
