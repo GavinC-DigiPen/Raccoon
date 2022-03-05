@@ -27,8 +27,6 @@ public class EnemyAI : MonoBehaviour
     public string sceneName;
     [Tooltip("Time before player is captured")]
     public float timeToCapture = 0.5f;
-    [Tooltip("The sprite indicator that warns the player they are being seen")]
-    public Sprite warningIndicator;
     [Tooltip("The sprite indicator that tells the player they are caught")]
     public Sprite caughtIndicator;
     [Tooltip("The aduio inidcator that warns the player they are being seen")]
@@ -41,6 +39,10 @@ public class EnemyAI : MonoBehaviour
     public AudioClip walk;
     [Tooltip("The audio for walking while in the wall")]
     public AudioClip walkInWall;
+    [Tooltip("The audio that automatically playes randomly")]
+    public AudioClip[] idleAudio;
+    [Tooltip("The time range for how often the idle audio will play")]
+    public Vector2 idleAudioTimeRange;
 
     private Rigidbody2D myRB;
     private AudioSource myAud;
@@ -49,7 +51,10 @@ public class EnemyAI : MonoBehaviour
 
     private bool isRight = false;
     private bool seesRaccoon = false;
+    private bool playingAudio = false;
     private float timer = 0;
+    private float audioTime = 0;
+    private float audioTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +67,8 @@ public class EnemyAI : MonoBehaviour
 
         indicator.SetActive(false);
         myAud.clip = walkInWall;
+
+        audioTimer = Random.Range(idleAudioTimeRange.x, idleAudioTimeRange.y);
     }
 
     // FixedUpdate is called once per physics frame
@@ -95,6 +102,18 @@ public class EnemyAI : MonoBehaviour
                 Scaler.x = 1;
                 transform.localScale = Scaler;
             }
+
+            if (audioTimer > audioTime && !playingAudio)
+            {
+                int index = Random.Range(0, idleAudio.Length);
+                myAud.PlayOneShot(idleAudio[index]);
+                audioTime = Random.Range(idleAudioTimeRange.x, idleAudioTimeRange.y) + idleAudio[index].length;
+                audioTimer = 0;
+            }
+            else
+            {
+                audioTimer += Time.deltaTime;
+            }
         }
     }
 
@@ -103,10 +122,13 @@ public class EnemyAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (!seesRaccoon)
+            if (!seesRaccoon && !playingAudio)
             {
+                playingAudio = true;
+                myAud.Stop();
+                myAud.Play();
                 myAud.PlayOneShot(warningAudio);
-                StartCoroutine(RaccoonGaspAudio(collision.gameObject));
+                StartCoroutine(RaccoonGaspAudio());
             }
 
             seesRaccoon = true;
@@ -118,10 +140,10 @@ public class EnemyAI : MonoBehaviour
                 indicator.SetActive(true);
                 myAud.PlayOneShot(caughtAudio);
                 StartCoroutine(EndGame());
+                timer = -100;
             }
             else
             {
-                indicator.GetComponent<SpriteRenderer>().sprite = warningIndicator;
                 indicator.SetActive(true);
             }
         }
@@ -140,10 +162,11 @@ public class EnemyAI : MonoBehaviour
     }
 
     // The audio for the raccoon gasping
-    private IEnumerator RaccoonGaspAudio(GameObject raccoon)
+    private IEnumerator RaccoonGaspAudio()
     {
         yield return new WaitForSeconds(warningAudio.length + 0.1f);
-        raccoon.GetComponent<AudioSource>().PlayOneShot(raccoonGaspAudio);
+        myAud.PlayOneShot(raccoonGaspAudio);
+        playingAudio = false;
     }
 
     // End the game

@@ -46,14 +46,11 @@ public class Collectible : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             GameManager.score += points;
-            AudioSource PAud = collision.gameObject.GetComponent<AudioSource>();
-            if(PAud != null)
-            {
-                PAud.PlayOneShot(food[activeIndex].foodPickUpNoise);
-            }
             if(SpawnOnPickUp != null)
             {
-                Instantiate(SpawnOnPickUp, transform.position, transform.rotation);
+                GameObject foodObj =Instantiate(SpawnOnPickUp, transform.position, transform.rotation);
+                foodObj.GetComponent<AudioSource>().PlayOneShot(food[activeIndex].foodPickUpNoise);
+                foodObj.GetComponent<DestroyAtTime>().DeathTime = food[activeIndex].foodPickUpNoise.length > foodObj.GetComponent<DestroyAtTime>().DeathTime ? food[activeIndex].foodPickUpNoise.length : foodObj.GetComponent<DestroyAtTime>().DeathTime;
             }
             Destroy(gameObject);
         }
