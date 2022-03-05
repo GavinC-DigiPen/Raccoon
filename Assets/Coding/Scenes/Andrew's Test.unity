@@ -4349,6 +4349,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4340476582768937286, guid: 88c305862b5b86447ba838660d1a5856,
+        type: 3}
+      propertyPath: wallMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 69b9ad098a303bc409142f119ee1b0b1, type: 3}
+    - target: {fileID: 4340476582768937286, guid: 88c305862b5b86447ba838660d1a5856,
+        type: 3}
+      propertyPath: wallMusicCue
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
     - target: {fileID: 4340476582768937287, guid: 88c305862b5b86447ba838660d1a5856,
         type: 3}
       propertyPath: m_RootOrder
