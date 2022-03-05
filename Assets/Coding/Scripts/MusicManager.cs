@@ -13,7 +13,11 @@ public class MusicManager : MonoBehaviour
     public AudioClip calmMusicCue;
     public AudioClip calmMusic;
     public AudioClip anxiousMusicCue;
+    public AudioClip wallMusicCue;
+    public AudioClip wallMusic;
     private AudioSource myAud;
+    private bool isPlayingCalm = true;
+    private bool isPlayingWall = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +38,26 @@ public class MusicManager : MonoBehaviour
 
             StartCoroutine(WaitForMusic());
         }
+        if (GameManager.inWall == true && isPlayingWall == false)
+        {
+            isPlayingCalm = false;
+            isPlayingWall = true;
+            myAud.Stop();
+            myAud.clip = wallMusicCue;
+            myAud.Play();
+
+            StartCoroutine(WaitForWallMusic());
+        }
+        if (GameManager.inWall == false && isPlayingCalm == false)
+        {
+            isPlayingCalm = true;
+            isPlayingWall = false;
+            myAud.Stop();
+            myAud.clip = calmMusicCue;
+            myAud.Play();
+            
+            StartCoroutine(WaitForCue());
+        }
     }
 
     //waits for music to finish
@@ -44,15 +68,24 @@ public class MusicManager : MonoBehaviour
         myAud.clip = calmMusicCue;
         myAud.Play();
 
-        StartCoroutine(waitForCue());
+        StartCoroutine(WaitForCue());
     }
 
     //waits for cue to finish
-    private IEnumerator waitForCue()
+    private IEnumerator WaitForCue()
     {
         yield return new WaitForSeconds(myAud.clip.length);
 
         myAud.clip = calmMusic;
+        myAud.Play();
+    }
+
+    //waiting for wall music
+    private IEnumerator WaitForWallMusic()
+    {
+        yield return new WaitForSeconds(myAud.clip.length);
+
+        myAud.clip = wallMusic;
         myAud.Play();
     }
 }

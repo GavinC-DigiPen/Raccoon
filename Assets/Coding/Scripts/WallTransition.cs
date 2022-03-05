@@ -26,6 +26,8 @@ public class WallTransition : MonoBehaviour
     private float timer = 0;
     public float countdown = 1;
     private bool haveSet = false;
+    public AudioClip enterWallSound;
+    private AudioSource myAud;
 
 
     // Start is called before the first frame update
@@ -87,9 +89,9 @@ public class WallTransition : MonoBehaviour
                     //checks if child is a Grid
                     if (layer1.transform.GetChild(i).gameObject.CompareTag("Grid"))
                     {
-                        //sets the loaction of grid, and its colors
-                        
-
+                        //plays audio
+                        myAud = GetComponent<AudioSource>();
+                        myAud.PlayOneShot(enterWallSound);
 
                         //if it is a Grid then change the Alpha value on each tilemap within grid
                         for (int j = 0; j < layer1.transform.GetChild(i).transform.childCount; ++j)
