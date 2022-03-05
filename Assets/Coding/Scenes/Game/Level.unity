@@ -2381,6 +2381,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelExit
       objectReference: {fileID: 0}
+    - target: {fileID: 1036833250586106355, guid: 20771c45b8a1354418d96439f9375c25,
+        type: 3}
+      propertyPath: m_TagString
+      value: Exit
+      objectReference: {fileID: 0}
     - target: {fileID: 1036833251650623290, guid: 20771c45b8a1354418d96439f9375c25,
         type: 3}
       propertyPath: m_Sprite
