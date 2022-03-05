@@ -33,6 +33,14 @@ public class EnemyAI : MonoBehaviour
     public Sprite caughtIndicator;
     [Tooltip("The aduio inidcator that warns the player they are being seen")]
     public AudioClip warningAudio;
+    [Tooltip("The aduio inidcator that warns the player they are being seen, from the raccoon")]
+    public AudioClip raccoonGaspAudio;
+    [Tooltip("The audio that plays when you are caught")]
+    public AudioClip caughtAudio;
+    [Tooltip("The audio for walking")]
+    public AudioClip walk;
+    [Tooltip("The audio for walking while in the wall")]
+    public AudioClip walkInWall;
 
     private Rigidbody2D myRB;
     private AudioSource myAud;
@@ -53,12 +61,15 @@ public class EnemyAI : MonoBehaviour
         indicator = gameObject.transform.GetChild(0).gameObject;
 
         indicator.SetActive(false);
+        myAud.clip = walkInWall;
     }
 
     // FixedUpdate is called once per physics frame
     void FixedUpdate()
     {
+        myAud.clip = GameManager.inWall ? walkInWall : walk;
         GameManager.raccoonSeen = seesRaccoon;
+
         if (!seesRaccoon)
         {
             if (isRight)
@@ -95,7 +106,7 @@ public class EnemyAI : MonoBehaviour
             if (!seesRaccoon)
             {
                 myAud.PlayOneShot(warningAudio);
-                StartCoroutine(RaccoonGaspAudio());
+                StartCoroutine(RaccoonGaspAudio(collision.gameObject));
             }
 
             seesRaccoon = true;
@@ -105,6 +116,7 @@ public class EnemyAI : MonoBehaviour
             {
                 indicator.GetComponent<SpriteRenderer>().sprite = caughtIndicator;
                 indicator.SetActive(true);
+                myAud.PlayOneShot(caughtAudio);
                 StartCoroutine(EndGame());
             }
             else
@@ -128,16 +140,16 @@ public class EnemyAI : MonoBehaviour
     }
 
     // The audio for the raccoon gasping
-    private IEnumerator RaccoonGaspAudio()
+    private IEnumerator RaccoonGaspAudio(GameObject raccoon)
     {
-        yield return new WaitForSeconds(0.5f);
-        // Play gasp
+        yield return new WaitForSeconds(warningAudio.length + 0.1f);
+        raccoon.GetComponent<AudioSource>().PlayOneShot(raccoonGaspAudio);
     }
 
     // End the game
     private IEnumerator EndGame()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(caughtAudio.length);
         GameManager.score = -100;
         SceneManager.LoadScene(sceneName);
     }

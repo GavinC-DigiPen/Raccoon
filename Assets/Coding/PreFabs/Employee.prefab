@@ -96,8 +96,8 @@ GameObject:
   - component: {fileID: 8973018844699965287}
   - component: {fileID: 8973018844699965280}
   - component: {fileID: 8973018844699965281}
-  - component: {fileID: 8973018844699965311}
   - component: {fileID: 2383227607880139622}
+  - component: {fileID: 8973018844699965311}
   - component: {fileID: 8310156147950272227}
   m_Layer: 0
   m_Name: Employee
@@ -239,28 +239,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8973018844699965311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8973018844699965282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2e4631e57f9fd84d9fe37bb6eb0ab36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xLocationLeft: 1.5
-  xLocationRight: 8
-  marginOfError: 0.25
-  speed: 15
-  sceneName: EndScene
-  timeToCapture: 2
-  warningIndicator: {fileID: 7482667652216324306, guid: fc79788efd7df2e4d811c9c295d400ef,
-    type: 3}
-  caughtIndicator: {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
-  warningAudio: {fileID: 8300000, guid: 39e815db8f7692a44ba7653e4d249281, type: 3}
 --- !u!60 &2383227607880139622
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -290,6 +268,32 @@ PolygonCollider2D:
       - {x: -0.50687385, y: 0.6261512}
       - {x: -2.636584, y: 0.6303107}
       - {x: -2.6365843, y: -0.92023283}
+--- !u!114 &8973018844699965311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973018844699965282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e4631e57f9fd84d9fe37bb6eb0ab36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xLocationLeft: 1.5
+  xLocationRight: 8
+  marginOfError: 0.25
+  speed: 15
+  sceneName: EndScene
+  timeToCapture: 2
+  warningIndicator: {fileID: 7482667652216324306, guid: fc79788efd7df2e4d811c9c295d400ef,
+    type: 3}
+  caughtIndicator: {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
+  warningAudio: {fileID: 8300000, guid: 7fb8fb23d93e10447b733d218efd5990, type: 3}
+  raccoonGaspAudio: {fileID: 8300000, guid: 94aada79c078ea744a8bbea3bd9d460d, type: 3}
+  caughtAudio: {fileID: 8300000, guid: 2245fbe8c8de30746b9b54b883809f0e, type: 3}
+  walk: {fileID: 8300000, guid: dd8c8a1e11b3d5e4b8816ee88e8ae5e1, type: 3}
+  walkInWall: {fileID: 8300000, guid: 57085d722bc52184691aac41d4b74d53, type: 3}
 --- !u!82 &8310156147950272227
 AudioSource:
   m_ObjectHideFlags: 0

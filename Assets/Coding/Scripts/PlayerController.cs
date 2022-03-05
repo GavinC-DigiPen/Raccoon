@@ -63,6 +63,8 @@ public class PlayerController : MonoBehaviour
         myRb = GetComponent<Rigidbody2D>();
         myAud = GetComponent<AudioSource>();
         myAnim = GetComponent<Animator>();
+
+        myAud.clip = jumpNoise;
     }
 
     //Update is called once per frame

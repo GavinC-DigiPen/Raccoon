@@ -196,7 +196,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 61233224999947987, guid: 4a712e0e5a8a4554fb944ee1894c9dc7,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2b0f4165120d4fe47be3ab1f5e4b7ff6, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -307,6 +307,6 @@ MonoBehaviour:
   jumpTime: 0.3
   groundDrag: 10
   airDrag: 3
-  jumpNoise: {fileID: 8300000, guid: 39e815db8f7692a44ba7653e4d249281, type: 3}
-  walkNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
-  runNoise: {fileID: 8300000, guid: 2b0f4165120d4fe47be3ab1f5e4b7ff6, type: 3}
+  jumpNoise: {fileID: 8300000, guid: a12629f6e6026af448a0a629859c8a1c, type: 3}
+  walkNoise: {fileID: 8300000, guid: 557bdffd306f2654085cd93db7fd616c, type: 3}
+  runNoise: {fileID: 8300000, guid: 9867c65566a49a54c86629a42904dda2, type: 3}

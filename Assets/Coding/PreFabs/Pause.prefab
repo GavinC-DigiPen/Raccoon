@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24230caec7446f24da328a812690afd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSound: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
+  buttonSound: {fileID: 8300000, guid: 9ad021472c7c6e149a9caafb95cbfef3, type: 3}
   sceneSource: {fileID: 6881405091797934654}
 --- !u!1 &6881405091897398554
 GameObject:
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: MainMenu
-  buttonSound: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
+  buttonSound: {fileID: 8300000, guid: 9ad021472c7c6e149a9caafb95cbfef3, type: 3}
   sceneSource: {fileID: 6881405091797934654}
 --- !u!1 &6881405091961305970
 GameObject:

@@ -36,11 +36,8 @@ public class Collectible : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        activeIndex = Random.Range(0, food.Length - 1);
+        activeIndex = Random.Range(0, food.Length);
         GetComponent<SpriteRenderer>().sprite = food[activeIndex].foodSprite;
-
-        Color c = GetComponent<SpriteRenderer>().color;
-        c = new Color(c.r, c.g, c.b, 0.5f);
     }
 
     // When collectible collides with object

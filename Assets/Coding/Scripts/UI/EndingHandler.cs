@@ -23,9 +23,11 @@ public class EndingHandler : MonoBehaviour
     public Sprite spriteOkay;
     [Tooltip("Best ending image")]
     public Sprite spriteBest;
-    [Tooltip("Worst ending audio")]
+    [Tooltip("Caught ending sound")]
+    public AudioClip audioCaught;
+    [Tooltip("Bad ending audio")]
     public AudioClip audioBad;
-    [Tooltip("Fine ending audio")]
+    [Tooltip("Okay ending audio")]
     public AudioClip audioOkay;
     [Tooltip("Best ending audio")]
     public AudioClip audioAmazing;
@@ -57,6 +59,7 @@ public class EndingHandler : MonoBehaviour
         else
         {
             endImage.sprite = spriteCaught;
+            myAud.PlayOneShot(audioCaught);
         }
     }
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7855004461276386710}
   - component: {fileID: 7855004461276386711}
-  - component: {fileID: 7855004461276386708}
+  - component: {fileID: 8358738126140061307}
   - component: {fileID: 7855004461276386709}
   m_Layer: 0
   m_Name: Coin
@@ -84,8 +84,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &7855004461276386708
-CapsuleCollider2D:
+--- !u!61 &8358738126140061307
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,8 +98,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!114 &7855004461276386709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +125,11 @@ MonoBehaviour:
   points: 1
   food:
   - foodSprite: {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
-    foodPickUpNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
+    foodPickUpNoise: {fileID: 8300000, guid: 270a48e522ab6e544bafac298e5d86d0, type: 3}
+  - foodSprite: {fileID: 21300000, guid: c61a5e40a0983ce4484bd50e52bbca3f, type: 3}
+    foodPickUpNoise: {fileID: 8300000, guid: f9d78f438cb7ba5409943133f6b5c5dc, type: 3}
+  - foodSprite: {fileID: 7482667652216324306, guid: fc79788efd7df2e4d811c9c295d400ef,
+      type: 3}
+    foodPickUpNoise: {fileID: 8300000, guid: 947e8dc5b7fa4434aa02a9ddd56b993e, type: 3}
   SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
     type: 3}
