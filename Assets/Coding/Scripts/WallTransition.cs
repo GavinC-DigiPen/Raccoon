@@ -88,7 +88,7 @@ public class WallTransition : MonoBehaviour
                     for (int j = 0; j < decoration.transform.childCount; ++j)
                     {
                         defualtDecorationColor = decoration.transform.GetChild(j).GetComponent<Tilemap>().color;
-                        transparentDecorationColor = new Color(defualtDecorationColor.r, defualtDecorationColor.g, defualtExitColor.b, 0.3f);
+                        transparentDecorationColor = new Color(defualtDecorationColor.r, defualtDecorationColor.g, defualtDecorationColor.b, 0.3f);
                     }
 
                 }
