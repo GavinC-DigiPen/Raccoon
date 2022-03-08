@@ -31,6 +31,9 @@ public class WallTransition : MonoBehaviour
     private GameObject exit;
     private Color defualtExitColor;
     private Color transparentExitColor;
+    private GameObject decoration;
+    private Color defualtDecorationColor;
+    private Color transparentDecorationColor;
 
 
     // Start is called before the first frame update
@@ -78,6 +81,18 @@ public class WallTransition : MonoBehaviour
                     defualtExitColor = exit.GetComponent<SpriteRenderer>().color;
                     transparentExitColor = new Color(defualtExitColor.r, defualtExitColor.g, defualtExitColor.b, 0.3f);
                 }
+                //set decoration color
+                if (layer1.transform.GetChild(i).gameObject.CompareTag("Decoration"))
+                {
+                    decoration = layer1.gameObject.transform.GetChild(i).gameObject;
+                    for (int j = 0; j < decoration.transform.childCount; ++j)
+                    {
+                        defualtDecorationColor = decoration.transform.GetChild(j).GetComponent<Tilemap>().color;
+                        transparentDecorationColor = new Color(defualtDecorationColor.r, defualtDecorationColor.g, defualtExitColor.b, 0.3f);
+                    }
+
+                }
+
             }
             haveSet = true;
         }
@@ -90,8 +105,13 @@ public class WallTransition : MonoBehaviour
         {
             if (timer > countdown)
             {
+                //keeps track of if player is in wall
                 wall.SetActive(!wall.activeInHierarchy);
                 GameManager.inWall = !GameManager.inWall;
+
+                //plays audio
+                myAud = GetComponent<AudioSource>();
+                myAud.PlayOneShot(enterWallSound);
 
                 //loops through all children inside parent(layer1)
                 for (int i = 0; i < layer1.transform.childCount; ++i)
@@ -99,9 +119,6 @@ public class WallTransition : MonoBehaviour
                     //checks if child is a Grid
                     if (layer1.transform.GetChild(i).gameObject.CompareTag("Grid"))
                     {
-                        //plays audio
-                        myAud = GetComponent<AudioSource>();
-                        myAud.PlayOneShot(enterWallSound);
 
                         //if it is a Grid then change the Alpha value on each tilemap within grid
                         for (int j = 0; j < layer1.transform.GetChild(i).transform.childCount; ++j)
@@ -158,8 +175,25 @@ public class WallTransition : MonoBehaviour
                         }
                     }
 
-                        //collectables
-                        Collectible[] collectables = FindObjectsOfType<Collectible>();
+                    //Decorations
+                    if (layer1.transform.GetChild(i).gameObject.CompareTag("Decoration"))
+                    {
+                        for (int j = 0; j < layer1.transform.GetChild(i).transform.childCount; ++j)
+                        {
+                            decoration = layer1.gameObject.transform.GetChild(i).gameObject;
+                            if (!GameManager.inWall)
+                            {
+                                decoration.transform.GetChild(j).GetComponent<Tilemap>().color = defualtDecorationColor;
+                            }
+                            else
+                            {
+                                decoration.transform.GetChild(j).GetComponent<Tilemap>().color = transparentDecorationColor;
+                            }
+                        }
+                    }
+
+                    //collectables
+                    Collectible[] collectables = FindObjectsOfType<Collectible>();
                     for (int j = 0; j < collectables.Length; j++)
                     {
                         if (!GameManager.inWall)

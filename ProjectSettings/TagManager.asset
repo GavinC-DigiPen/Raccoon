@@ -8,6 +8,7 @@ TagManager:
   - Grid
   - Exit
   - Coin
+  - Decoration
   layers:
   - Default
   - TransparentFX
