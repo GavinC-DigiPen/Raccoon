@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 248505
+    totalSpriteSurfaceArea: 259257
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -194,6 +194,7 @@ SpriteAtlas:
   - {fileID: -9146609327675045958, guid: 7c61ee5a6ed69a847ae09797a11c6945, type: 3}
   - {fileID: 4825199298689810359, guid: 7c61ee5a6ed69a847ae09797a11c6945, type: 3}
   - {fileID: 896416625506702327, guid: 7c61ee5a6ed69a847ae09797a11c6945, type: 3}
+  - {fileID: 21300000, guid: 7cb8ed6b2a22bcd4ab07909d5386e159, type: 3}
   - {fileID: -6696901435770036761, guid: fe20632c25f70b44d945c7c5b8f67e86, type: 3}
   - {fileID: -1840068896150487419, guid: fe20632c25f70b44d945c7c5b8f67e86, type: 3}
   - {fileID: 2362202153724523016, guid: fe20632c25f70b44d945c7c5b8f67e86, type: 3}
@@ -505,6 +506,7 @@ SpriteAtlas:
   - raccoon walk_5
   - raccoon walk_6
   - raccoon walk_7
+  - Empty
   - alert icon - !_12
   - alert icon - !_13
   - alert icon - !_10
