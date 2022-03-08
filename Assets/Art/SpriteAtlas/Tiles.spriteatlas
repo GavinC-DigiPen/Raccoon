@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 237445
+    totalSpriteSurfaceArea: 248505
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -317,6 +317,7 @@ SpriteAtlas:
   - {fileID: -2209401061123471698, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 1018328791618719094, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 6731733094262721628, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
+  - {fileID: 21300000, guid: e01df65ed184195428ed894b8e60a3ad, type: 3}
   - {fileID: 7482667652216324306, guid: fc79788efd7df2e4d811c9c295d400ef, type: 3}
   - {fileID: 5252132022211280153, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
   - {fileID: 8244170703695050594, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
@@ -627,6 +628,7 @@ SpriteAtlas:
   - tileset_96
   - tileset_95
   - tileset_94
+  - menu art
   - Square
   - Racoon game assets (Alpha)_0
   - Racoon game assets (Alpha)_1

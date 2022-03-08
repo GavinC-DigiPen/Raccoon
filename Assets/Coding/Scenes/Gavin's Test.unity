@@ -2261,12 +2261,12 @@ PrefabInstance:
     - target: {fileID: 1036833250586106348, guid: 20771c45b8a1354418d96439f9375c25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.85
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 1036833250586106348, guid: 20771c45b8a1354418d96439f9375c25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.01
+      value: -2.06
       objectReference: {fileID: 0}
     - target: {fileID: 1036833250586106348, guid: 20771c45b8a1354418d96439f9375c25,
         type: 3}
@@ -2293,27 +2293,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1036833250586106348, guid: 20771c45b8a1354418d96439f9375c25,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1036833250586106348, guid: 20771c45b8a1354418d96439f9375c25,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1036833250586106348, guid: 20771c45b8a1354418d96439f9375c25,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1036833250586106351, guid: 20771c45b8a1354418d96439f9375c25,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7482667652216324306, guid: fc79788efd7df2e4d811c9c295d400ef,
-        type: 3}
     - target: {fileID: 1036833250586106351, guid: 20771c45b8a1354418d96439f9375c25,
         type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -2342,6 +2321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1036833251650623293, guid: 20771c45b8a1354418d96439f9375c25,
         type: 3}
+      propertyPath: m_Name
+      value: Indicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036833251650623293, guid: 20771c45b8a1354418d96439f9375c25,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2354,6 +2338,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1114679621720541712, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8973018844699965282, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
         type: 3}
       propertyPath: m_Name
