@@ -1,67 +1,49 @@
 fileFormatVersion: 2
-guid: a053a758293b9e44ebc3acb7ab5e54aa
+guid: fe20632c25f70b44d945c7c5b8f67e86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3344890479535941906
-    second: raccoon walk_0
+      213: 3240977942553487002
+    second: alert icon - !_0
   - first:
-      213: -4112398975924821772
-    second: raccoon walk_1
+      213: 6779034187573076858
+    second: alert icon - !_1
   - first:
-      213: -695008290102712648
-    second: raccoon walk_2
+      213: 6493174007448540849
+    second: alert icon - !_2
   - first:
-      213: -5218515349223671948
-    second: raccoon walk_3
+      213: 2184602237124957671
+    second: alert icon - !_3
   - first:
-      213: -7738276722306972652
-    second: raccoon walk_4
+      213: -8654772539425017316
+    second: alert icon - !_4
   - first:
-      213: -9146609327675045958
-    second: raccoon walk_5
+      213: 560651699553815638
+    second: alert icon - !_5
   - first:
-      213: 4825199298689810359
-    second: raccoon walk_6
+      213: 3998298432043031949
+    second: alert icon - !_6
   - first:
-      213: 896416625506702327
-    second: raccoon walk_7
+      213: 2653965828566327485
+    second: alert icon - !_7
   - first:
-      213: -8492130648617609540
-    second: raccoon walk_8
+      213: 4429167116169299483
+    second: alert icon - !_8
   - first:
-      213: -3195690901542801848
-    second: raccoon walk_9
+      213: 6182835226351089797
+    second: alert icon - !_9
   - first:
-      213: -6557889525894461143
-    second: raccoon walk (alpha)_0
+      213: 2362202153724523016
+    second: alert icon - !_10
   - first:
-      213: -5778517740582635256
-    second: raccoon walk (alpha)_1
+      213: 9123527076308436541
+    second: alert icon - !_11
   - first:
-      213: 3213505066677942596
-    second: raccoon walk (alpha)_2
+      213: -6696901435770036761
+    second: alert icon - !_12
   - first:
-      213: 3083247935234078189
-    second: raccoon walk (alpha)_3
-  - first:
-      213: -3364583340884531952
-    second: raccoon walk (alpha)_4
-  - first:
-      213: 9046436513973977724
-    second: raccoon walk (alpha)_5
-  - first:
-      213: 9026316825536526454
-    second: raccoon walk (alpha)_6
-  - first:
-      213: 8261387835798205910
-    second: raccoon walk (alpha)_7
-  - first:
-      213: 9150221001352634200
-    second: raccoon walk (alpha)_8
-  - first:
-      213: -2819656687200488699
-    second: raccoon walk (alpha)_9
+      213: -1840068896150487419
+    second: alert icon - !_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: raccoon walk (alpha)_0
+      name: alert icon - !_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 160
-        width: 32
-        height: 32
+        x: 16
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9294ecca832bdf4a0800000000000000
-      internalID: -6557889525894461143
+      spriteID: a96e6ce64444afc20800000000000000
+      internalID: 3240977942553487002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raccoon walk (alpha)_1
+      name: alert icon - !_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 160
-        width: 32
-        height: 32
+        x: 32
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80977481bb49ecfa0800000000000000
-      internalID: -5778517740582635256
+      spriteID: a73a58e3da7f31e50800000000000000
+      internalID: 6779034187573076858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raccoon walk (alpha)_2
+      name: alert icon - !_2
       rect:
         serializedVersion: 2
-        x: 104
-        y: 160
-        width: 32
-        height: 32
+        x: 48
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 449b14f05d9a89c20800000000000000
-      internalID: 3213505066677942596
+      spriteID: 1b615c28b536c1a50800000000000000
+      internalID: 6493174007448540849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raccoon walk (alpha)_3
+      name: alert icon - !_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 112
-        width: 32
-        height: 32
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de5751e49a5e9ca20800000000000000
-      internalID: 3083247935234078189
+      spriteID: 7e55b5ff824415e10800000000000000
+      internalID: 2184602237124957671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raccoon walk (alpha)_4
+      name: alert icon - !_4
       rect:
         serializedVersion: 2
-        x: 56
-        y: 112
-        width: 32
-        height: 32
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015616d17499e41d0800000000000000
-      internalID: -3364583340884531952
+      spriteID: c1234c7fa3214e780800000000000000
+      internalID: -8654772539425017316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raccoon walk (alpha)_5
+      name: alert icon - !_5
       rect:
         serializedVersion: 2
-        x: 104
-        y: 112
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c72ca8254166b8d70800000000000000
-      internalID: 9046436513973977724
+      spriteID: 65ccf9210c5d7c700800000000000000
+      internalID: 560651699553815638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raccoon walk (alpha)_6
+      name: alert icon - !_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 64
-        width: 32
-        height: 32
+        x: 48
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,62 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6787c30545be34d70800000000000000
-      internalID: 9026316825536526454
+      spriteID: d8d1de37d3fcc7730800000000000000
+      internalID: 3998298432043031949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raccoon walk (alpha)_7
+      name: alert icon - !_7
       rect:
         serializedVersion: 2
-        x: 56
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d53c78477856a270800000000000000
-      internalID: 8261387835798205910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raccoon walk (alpha)_8
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85f51f1558d1cfe70800000000000000
-      internalID: 9150221001352634200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raccoon walk (alpha)_9
-      rect:
-        serializedVersion: 2
-        x: 8
+        x: 0
         y: 16
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,8 +294,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5033cd2ae219ed8d0800000000000000
-      internalID: -2819656687200488699
+      spriteID: db0a8b91cd7c4d420800000000000000
+      internalID: 2653965828566327485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alert icon - !_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16cc128600977d30800000000000000
+      internalID: 4429167116169299483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alert icon - !_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588bd6b51e7ddc550800000000000000
+      internalID: 6182835226351089797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alert icon - !_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802b964e75a38c020800000000000000
+      internalID: 2362202153724523016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alert icon - !_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36c50299874d9e70800000000000000
+      internalID: 9123527076308436541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alert icon - !_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed9f1930a3df03a0800000000000000
+      internalID: -6696901435770036761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alert icon - !_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e74ba8613c676e0800000000000000
+      internalID: -1840068896150487419
       vertices: []
       indices: 
       edges: []
