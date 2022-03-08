@@ -27,8 +27,6 @@ public class EnemyAI : MonoBehaviour
     public string sceneName;
     [Tooltip("Time before player is captured")]
     public float timeToCapture = 0.5f;
-    [Tooltip("The sprite indicator that tells the player they are caught")]
-    public Sprite caughtIndicator;
     [Tooltip("The aduio inidcator that warns the player they are being seen")]
     public AudioClip warningAudio;
     [Tooltip("The aduio inidcator that warns the player they are being seen, from the raccoon")]
@@ -48,6 +46,7 @@ public class EnemyAI : MonoBehaviour
     private AudioSource myAud;
     private Animator myAnim;
     private GameObject indicator;
+    private Animator indicatorAnim;
 
     private bool isRight = false;
     private bool seesRaccoon = false;
@@ -62,10 +61,9 @@ public class EnemyAI : MonoBehaviour
         myRB = GetComponent<Rigidbody2D>();
         myAud = GetComponent<AudioSource>(); ;
         myAnim = GetComponent<Animator>();
+        indicator = transform.GetChild(0).gameObject;
+        indicatorAnim = indicator.GetComponent<Animator>();
 
-        indicator = gameObject.transform.GetChild(0).gameObject;
-
-        indicator.SetActive(false);
         myAud.clip = walkInWall;
 
         audioTimer = Random.Range(idleAudioTimeRange.x, idleAudioTimeRange.y);
@@ -94,6 +92,10 @@ public class EnemyAI : MonoBehaviour
                 Vector3 Scaler = transform.localScale;
                 Scaler.x = -1;
                 transform.localScale = Scaler;
+
+                Scaler = indicator.transform.localScale;
+                Scaler.x = -1;
+                indicator.transform.localScale = Scaler;
             }
             else if (transform.position.x > xLocationRight - marginOfError)
             {
@@ -101,6 +103,10 @@ public class EnemyAI : MonoBehaviour
                 Vector3 Scaler = transform.localScale;
                 Scaler.x = 1;
                 transform.localScale = Scaler;
+
+                Scaler = indicator.transform.localScale;
+                Scaler.x = 1;
+                indicator.transform.localScale = Scaler;
             }
 
             if (audioTimer > audioTime && !playingAudio)
@@ -132,19 +138,15 @@ public class EnemyAI : MonoBehaviour
             }
 
             seesRaccoon = true;
+            indicatorAnim.SetBool("Seen", true);
             myAnim.SetBool("Moving", false);
             timer += Time.deltaTime;
             if (timer > timeToCapture)
             {
-                indicator.GetComponent<SpriteRenderer>().sprite = caughtIndicator;
-                indicator.SetActive(true);
                 myAud.PlayOneShot(caughtAudio);
+                indicatorAnim.SetBool("Caught", true);
                 StartCoroutine(EndGame());
                 timer = -100;
-            }
-            else
-            {
-                indicator.SetActive(true);
             }
         }
     }
@@ -155,24 +157,24 @@ public class EnemyAI : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             seesRaccoon = false;
+            indicatorAnim.SetBool("Seen", false);
             myAnim.SetBool("Moving", true);
             timer = 0;
-            indicator.SetActive(false);
         }
     }
 
     // The audio for the raccoon gasping
     private IEnumerator RaccoonGaspAudio()
     {
-        yield return new WaitForSeconds(warningAudio.length + 0.1f);
-        myAud.PlayOneShot(raccoonGaspAudio);
+        yield return new WaitForSeconds(warningAudio.length > indicatorAnim.GetCurrentAnimatorClipInfo(0).Length ? warningAudio.length + 0.1f : indicatorAnim.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+        myAud.PlayOneShot(raccoonGaspAudio); 
         playingAudio = false;
     }
 
     // End the game
     private IEnumerator EndGame()
     {
-        yield return new WaitForSeconds(caughtAudio.length);
+        yield return new WaitForSeconds(warningAudio.length > indicatorAnim.GetCurrentAnimatorClipInfo(0).Length ? warningAudio.length + 0.1f : indicatorAnim.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
         GameManager.score = -100;
         SceneManager.LoadScene(sceneName);
     }
