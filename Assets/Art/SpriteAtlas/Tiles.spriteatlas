@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 205760
+    totalSpriteSurfaceArea: 216020
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -318,6 +318,47 @@ SpriteAtlas:
   - {fileID: -8335302239656459199, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
   - {fileID: -5586314176763587840, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
   - {fileID: -2896977954361875101, guid: ad5f277f6f7fe754c88c40aead20249b, type: 3}
+  - {fileID: 5252132022211280153, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 8244170703695050594, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 8853386398818006888, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -1641452429822328758, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -6870504955364932884, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -7756599347364175361, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -6142272744449376683, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 4940669584011663087, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -3690641207085714109, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -5719588316406905405, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 49281837061626627, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 2190940447234144360, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 6216134346378079384, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -510319204016388839, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 8270515601782103438, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 6264834101169568118, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 4803539417522244698, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 7570145683596513711, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 1798718967016230714, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -766488607333051800, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 5612864538288568269, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -7293727952692914743, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 7888997442500309682, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 8656073481560194218, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 7325589057414347149, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 6836600009167614295, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -1151880456103395897, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 8494444609986148782, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -8647363266698450041, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 168483255416286437, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 7791637853365515622, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 4498376960945539344, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 5210485463893922676, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 2164843305556656732, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -2944978746806508916, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 4652389864128530277, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 6780956814447297810, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: 1177171537518572883, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -2968258571185682704, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -2649448088107042809, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
+  - {fileID: -3896789229626773567, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
   m_PackedSpriteNamesToIndex:
   - IsometricDiamond
   - Circle
@@ -587,6 +628,47 @@ SpriteAtlas:
   - Racoon game assets_1
   - Racoon game assets_0
   - Racoon game assets_2
+  - Racoon game assets (Alpha)_0
+  - Racoon game assets (Alpha)_1
+  - Racoon game assets (Alpha)_40
+  - Racoon game assets (Alpha)_2
+  - Racoon game assets (Alpha)_41
+  - Racoon game assets (Alpha)_3
+  - Racoon game assets (Alpha)_42
+  - Racoon game assets (Alpha)_4
+  - Racoon game assets (Alpha)_43
+  - Racoon game assets (Alpha)_5
+  - Racoon game assets (Alpha)_6
+  - Racoon game assets (Alpha)_7
+  - Racoon game assets (Alpha)_8
+  - Racoon game assets (Alpha)_9
+  - Racoon game assets (Alpha)_13
+  - Racoon game assets (Alpha)_12
+  - Racoon game assets (Alpha)_11
+  - Racoon game assets (Alpha)_10
+  - Racoon game assets (Alpha)_17
+  - Racoon game assets (Alpha)_27
+  - Racoon game assets (Alpha)_16
+  - Racoon game assets (Alpha)_15
+  - Racoon game assets (Alpha)_25
+  - Racoon game assets (Alpha)_39
+  - Racoon game assets (Alpha)_14
+  - Racoon game assets (Alpha)_22
+  - Racoon game assets (Alpha)_38
+  - Racoon game assets (Alpha)_23
+  - Racoon game assets (Alpha)_20
+  - Racoon game assets (Alpha)_19
+  - Racoon game assets (Alpha)_21
+  - Racoon game assets (Alpha)_18
+  - Racoon game assets (Alpha)_31
+  - Racoon game assets (Alpha)_30
+  - Racoon game assets (Alpha)_28
+  - Racoon game assets (Alpha)_32
+  - Racoon game assets (Alpha)_29
+  - Racoon game assets (Alpha)_35
+  - Racoon game assets (Alpha)_34
+  - Racoon game assets (Alpha)_37
+  - Racoon game assets (Alpha)_36
   m_RenderDataMap: {}
   m_Tag: Tiles
   m_IsVariant: 0

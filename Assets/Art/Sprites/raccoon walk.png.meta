@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a053a758293b9e44ebc3acb7ab5e54aa
+guid: 7c61ee5a6ed69a847ae09797a11c6945
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -29,9 +29,6 @@ TextureImporter:
   - first:
       213: -8492130648617609540
     second: raccoon walk_8
-  - first:
-      213: -3195690901542801848
-    second: raccoon walk_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,9 +122,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 160
+        y: 112
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,9 +143,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 56
-        y: 160
+        y: 112
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,9 +164,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 160
+        y: 112
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,9 +185,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 111
+        y: 64
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,9 +206,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 56
-        y: 114
+        y: 64
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,9 +227,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 115
+        y: 64
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,9 +248,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 64
+        y: 16
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,9 +269,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 56
-        y: 63
+        y: 16
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,9 +290,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 66
+        y: 16
         width: 32
-        height: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,27 +302,6 @@ TextureImporter:
       bones: []
       spriteID: cb690f61b24e52a80800000000000000
       internalID: -8492130648617609540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raccoon walk_9
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 19
-        width: 32
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84ee7997e00a6a3d0800000000000000
-      internalID: -3195690901542801848
       vertices: []
       indices: 
       edges: []
