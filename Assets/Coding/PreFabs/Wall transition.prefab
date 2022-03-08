@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wall: {fileID: 0}
   layer1: {fileID: 0}
-  countdown: 0.5
+  countdown: 1
   enterWallSound: {fileID: 8300000, guid: bc1065d07b640b04bb6249495c0427a9, type: 3}
 --- !u!61 &4821296139262838440
 BoxCollider2D:
