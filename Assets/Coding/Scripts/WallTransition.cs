@@ -91,8 +91,7 @@ public class WallTransition : MonoBehaviour
             if (timer > countdown)
             {
                 wall.SetActive(!wall.activeInHierarchy);
-                inWall = !inWall;
-                GameManager.inWall = inWall;
+                GameManager.inWall = !GameManager.inWall;
 
                 //loops through all children inside parent(layer1)
                 for (int i = 0; i < layer1.transform.childCount; ++i)
@@ -109,7 +108,7 @@ public class WallTransition : MonoBehaviour
                         {
                             grid = layer1.gameObject.transform.GetChild(i).gameObject;
 
-                            if (!inWall)
+                            if (!GameManager.inWall)
                             {
                                 grid.transform.GetChild(j).GetComponent<Tilemap>().color = defualtGridColor;
                                 grid.transform.GetChild(j).GetComponent<TilemapCollider2D>().enabled = true;
@@ -129,7 +128,7 @@ public class WallTransition : MonoBehaviour
                         //sets the loaction of enemy and its colors
                         enemy = layer1.gameObject.transform.GetChild(i).gameObject;
 
-                        if (!inWall)
+                        if (!GameManager.inWall)
                         {
                             enemy.GetComponent<SpriteRenderer>().color = defualtEnemyColor;
                             enemy.GetComponent<BoxCollider2D>().enabled = true;
@@ -147,7 +146,7 @@ public class WallTransition : MonoBehaviour
                     if (layer1.transform.GetChild(i).gameObject.CompareTag("Exit"))
                     {
                         exit = layer1.gameObject.transform.GetChild(i).gameObject;
-                        if (!inWall)
+                        if (!GameManager.inWall)
                         {
                             exit.GetComponent<SpriteRenderer>().color = defualtExitColor;
                             exit.GetComponent<BoxCollider2D>().enabled = true;
@@ -163,16 +162,18 @@ public class WallTransition : MonoBehaviour
                         Collectible[] collectables = FindObjectsOfType<Collectible>();
                     for (int j = 0; j < collectables.Length; j++)
                     {
-                        if (!inWall)
+                        if (!GameManager.inWall)
                         {
                             Color CC = collectables[j].gameObject.GetComponent<SpriteRenderer>().color;
-                            CC = new Color(CC.r, CC.g, CC.b, 0.3f);
+                            CC = new Color(CC.r, CC.g, CC.b, 1);
+                            collectables[j].gameObject.GetComponent<SpriteRenderer>().color = CC;
                             collectables[j].gameObject.GetComponent<BoxCollider2D>().enabled = true;
                         }
                         else
                         {
-                            Color CC = collectables[i].gameObject.GetComponent<SpriteRenderer>().color;
-                            CC = new Color(CC.r, CC.g, CC.b, 1);
+                            Color CC = collectables[j].gameObject.GetComponent<SpriteRenderer>().color;
+                            CC = new Color(CC.r, CC.g, CC.b, 0.3f);
+                            collectables[j].gameObject.GetComponent<SpriteRenderer>().color = CC;
                             collectables[j].gameObject.GetComponent<BoxCollider2D>().enabled = false;
                         }
                     }
