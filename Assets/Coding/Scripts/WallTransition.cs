@@ -34,6 +34,8 @@ public class WallTransition : MonoBehaviour
     private GameObject decoration;
     private Color defualtDecorationColor;
     private Color transparentDecorationColor;
+    private Color defualtEnemyScanColor;
+    private Color transparentEnemyScanColor;
 
 
     // Start is called before the first frame update
@@ -71,6 +73,11 @@ public class WallTransition : MonoBehaviour
                     enemy = layer1.gameObject.transform.GetChild(i).gameObject;
                     defualtEnemyColor = enemy.GetComponent<SpriteRenderer>().color;
                     transparentEnemyColor = new Color(defualtEnemyColor.r, defualtEnemyColor.g, defualtEnemyColor.b, 0.3f);
+                    for (int j = 0; j < enemy.transform.childCount; j++)
+                    {
+                        defualtEnemyScanColor = enemy.GetComponent<SpriteRenderer>().color;
+                        transparentEnemyScanColor = new Color(defualtEnemyScanColor.r, defualtEnemyScanColor.g, defualtEnemyScanColor.b, 0);
+                    }
 
                 }
 
@@ -150,12 +157,24 @@ public class WallTransition : MonoBehaviour
                             enemy.GetComponent<SpriteRenderer>().color = defualtEnemyColor;
                             enemy.GetComponent<BoxCollider2D>().enabled = true;
                             enemy.GetComponent<PolygonCollider2D>().enabled = true;
+                            if (enemy.CompareTag("Scaner"))
+                            {
+                                enemy.GetComponent<SpriteRenderer>().color = defualtEnemyScanColor;
+                            }
                         }
                         else
                         {
                             enemy.GetComponent<SpriteRenderer>().color = transparentEnemyColor;
                             enemy.GetComponent<BoxCollider2D>().enabled = false;
                             enemy.GetComponent<PolygonCollider2D>().enabled = false;
+                            for (int j = 0; j < enemy.transform.childCount; j++)
+                            {
+                                if (enemy.CompareTag("Scanner"))
+                                {
+                                    enemy.GetComponent<SpriteRenderer>().color = transparentEnemyScanColor;
+                                }
+                            }
+                            
                         }
                     }
 
