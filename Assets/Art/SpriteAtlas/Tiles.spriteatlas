@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 269497
+    totalSpriteSurfaceArea: 259288
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -194,16 +194,6 @@ SpriteAtlas:
   - {fileID: -9146609327675045958, guid: 7c61ee5a6ed69a847ae09797a11c6945, type: 3}
   - {fileID: 4825199298689810359, guid: 7c61ee5a6ed69a847ae09797a11c6945, type: 3}
   - {fileID: 896416625506702327, guid: 7c61ee5a6ed69a847ae09797a11c6945, type: 3}
-  - {fileID: 185439596296649411, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: -5063346225902742984, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: -4707600404360451483, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: -8761034705383869441, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: 2975604854702270826, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: 8423315317083483291, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: -401655416941875555, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: 5027794681643090364, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: -1330323275726092048, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
-  - {fileID: -2912209431770459319, guid: f16eb25beba88884bb40ca12dd544097, type: 3}
   - {fileID: 21300000, guid: 7cb8ed6b2a22bcd4ab07909d5386e159, type: 3}
   - {fileID: -6696901435770036761, guid: fe20632c25f70b44d945c7c5b8f67e86, type: 3}
   - {fileID: -1840068896150487419, guid: fe20632c25f70b44d945c7c5b8f67e86, type: 3}
@@ -516,16 +506,6 @@ SpriteAtlas:
   - raccoon walk_5
   - raccoon walk_6
   - raccoon walk_7
-  - raccoon jump_9
-  - raccoon jump_8
-  - raccoon jump_3
-  - raccoon jump_2
-  - raccoon jump_1
-  - raccoon jump_0
-  - raccoon jump_7
-  - raccoon jump_6
-  - raccoon jump_5
-  - raccoon jump_4
   - Empty
   - alert icon - !_12
   - alert icon - !_13

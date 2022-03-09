@@ -339,6 +339,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8397047256095260029, guid: e32040e6322592942802c17c9ad76122,
+        type: 3}
+      propertyPath: sprintSpeed
+      value: 65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e32040e6322592942802c17c9ad76122, type: 3}
 --- !u!1001 &249903258
@@ -11436,6 +11441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
         type: 3}
+      propertyPath: timeToCapture
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
+        type: 3}
       propertyPath: xLocationLeft
       value: 26
       objectReference: {fileID: 0}
@@ -11523,6 +11533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
+        type: 3}
+      propertyPath: timeToCapture
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
         type: 3}
@@ -11826,6 +11841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
+        type: 3}
+      propertyPath: timeToCapture
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
         type: 3}
@@ -37860,6 +37880,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
+        type: 3}
+      propertyPath: timeToCapture
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8973018844699965311, guid: 4ad7ee839e5267f49a0d84fd7bc1aaee,
         type: 3}
