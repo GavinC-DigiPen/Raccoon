@@ -157,24 +157,15 @@ public class WallTransition : MonoBehaviour
                             enemy.GetComponent<SpriteRenderer>().color = defualtEnemyColor;
                             enemy.GetComponent<BoxCollider2D>().enabled = true;
                             enemy.GetComponent<PolygonCollider2D>().enabled = true;
-                            if (enemy.CompareTag("Scaner"))
-                            {
-                                enemy.GetComponent<SpriteRenderer>().color = defualtEnemyScanColor;
-                            }
+                            enemy.transform.GetChild(1).gameObject.SetActive(true);
                         }
                         else
                         {
                             enemy.GetComponent<SpriteRenderer>().color = transparentEnemyColor;
                             enemy.GetComponent<BoxCollider2D>().enabled = false;
                             enemy.GetComponent<PolygonCollider2D>().enabled = false;
-                            for (int j = 0; j < enemy.transform.childCount; j++)
-                            {
-                                if (enemy.CompareTag("Scanner"))
-                                {
-                                    enemy.GetComponent<SpriteRenderer>().color = transparentEnemyScanColor;
-                                }
-                            }
-                            
+                            enemy.transform.GetChild(1).gameObject.SetActive(false);
+
                         }
                     }
 
