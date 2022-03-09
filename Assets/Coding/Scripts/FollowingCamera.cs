@@ -19,6 +19,8 @@ public class FollowingCamera : MonoBehaviour
     public string targetTag = "Player";
     [Tooltip("The speed the camera snaps to the target")]
     public float snapSpeed = 0.5f;
+    [Tooltip("The offset of the camera")]
+    public Vector2 cameraOffset;
     [Tooltip("The amount of time the camera shakes")]
     public float shakeTime = 0;
     [Tooltip("The magnitude of the shake")]
@@ -49,6 +51,7 @@ public class FollowingCamera : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 newPos = target.transform.position;
+        newPos += (Vector3)cameraOffset;
         newPos.z = transform.position.z;
 
         if(shakeTime > 0)
