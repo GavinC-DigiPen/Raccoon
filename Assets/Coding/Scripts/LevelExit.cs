@@ -28,6 +28,8 @@ public class LevelExit : MonoBehaviour
     void Start()
     {
         popUpScript = GetComponent<SignReading>();
+        GameManager.maxScore = 100;
+        popUpScript.IsActive(false);
     }
 
     // Update is called once per frame

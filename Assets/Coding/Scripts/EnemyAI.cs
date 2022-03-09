@@ -145,6 +145,11 @@ public class EnemyAI : MonoBehaviour
             {
                 myAud.PlayOneShot(caughtAudio);
                 indicatorAnim.SetBool("Caught", true);
+                collision.GetComponent<PlayerController>().enabled = false;
+                Animator playerAnim = collision.GetComponent<Animator>();
+                playerAnim.SetBool("OnGround", true);
+                playerAnim.SetBool("Fast", false);
+                playerAnim.SetBool("Moving", false);
                 StartCoroutine(EndGame());
                 timer = -100;
             }

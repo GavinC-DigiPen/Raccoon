@@ -195,7 +195,7 @@ public class PlayerController : MonoBehaviour
         if (direction != 0)
         {
             Vector3 Scaler = transform.localScale;
-            Scaler.x = direction;
+            Scaler.x = direction * Mathf.Abs(transform.localScale.x);
             transform.localScale = Scaler;
         }
     }
