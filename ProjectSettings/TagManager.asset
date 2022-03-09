@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - Coin
   - Decoration
+  - Scanner
   layers:
   - Default
   - TransparentFX

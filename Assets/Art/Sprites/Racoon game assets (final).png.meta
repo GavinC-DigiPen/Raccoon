@@ -1,0 +1,1224 @@
+fileFormatVersion: 2
+guid: 6fa629b514dec0f479898b94b59d2a1d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3320396456486147939
+    second: Racoon game assets (final)_0
+  - first:
+      213: 3739018007676240261
+    second: Racoon game assets (final)_1
+  - first:
+      213: -5668836222079049403
+    second: Racoon game assets (final)_4
+  - first:
+      213: 2128218544494837366
+    second: Racoon game assets (final)_5
+  - first:
+      213: 7779694865495848895
+    second: Racoon game assets (final)_6
+  - first:
+      213: 3141909737326501046
+    second: Racoon game assets (final)_7
+  - first:
+      213: 6430204492898735015
+    second: Racoon game assets (final)_8
+  - first:
+      213: -1274818502458165044
+    second: Racoon game assets (final)_12
+  - first:
+      213: -8062765517484649853
+    second: Racoon game assets (final)_13
+  - first:
+      213: -6566769194437847667
+    second: Racoon game assets (final)_14
+  - first:
+      213: 2765987398362282844
+    second: Racoon game assets (final)_21
+  - first:
+      213: 1968347626000173655
+    second: Racoon game assets (final)_22
+  - first:
+      213: 1085197585517696629
+    second: Racoon game assets (final)_25
+  - first:
+      213: 4791815476889309572
+    second: Racoon game assets (final)_26
+  - first:
+      213: -3730550308219450520
+    second: Racoon game assets (final)_27
+  - first:
+      213: 6427708925052285493
+    second: Racoon game assets (final)_28
+  - first:
+      213: -6589140758053319803
+    second: Racoon game assets (final)_31
+  - first:
+      213: 6471968157779513569
+    second: Racoon game assets (final)_32
+  - first:
+      213: 6818197989820499846
+    second: Racoon game assets (final)_33
+  - first:
+      213: 6708351413565799865
+    second: Racoon game assets (final)_34
+  - first:
+      213: 8032362322501650656
+    second: Racoon game assets (final)_35
+  - first:
+      213: -1801306906936159357
+    second: Racoon game assets (final)_38
+  - first:
+      213: 5803239978516441584
+    second: Racoon game assets (final)_39
+  - first:
+      213: -3628210906474955684
+    second: Racoon game assets (final)_40
+  - first:
+      213: 1350491099703996431
+    second: Racoon game assets (final)_41
+  - first:
+      213: -2932838002060090757
+    second: Racoon game assets (final)_42
+  - first:
+      213: 9038920028660510750
+    second: Racoon game assets (final)_44
+  - first:
+      213: -1091578851972356851
+    second: Racoon game assets (final)_45
+  - first:
+      213: 3302194606634828462
+    second: Racoon game assets (final)_46
+  - first:
+      213: -7837767921277856083
+    second: Racoon game assets (final)_54
+  - first:
+      213: -8981216220893605063
+    second: Racoon game assets (final)_55
+  - first:
+      213: 8250825903780999631
+    second: Racoon game assets (final)_56
+  - first:
+      213: -8587840782844388240
+    second: Racoon game assets (final)_58
+  - first:
+      213: 478477559297417742
+    second: Racoon game assets (final)_59
+  - first:
+      213: -1960065704150253830
+    second: Racoon game assets (final)_60
+  - first:
+      213: 6103846059851140314
+    second: Racoon game assets (final)_61
+  - first:
+      213: 3916156984600944163
+    second: Racoon game assets (final)_62
+  - first:
+      213: -8061986933439649926
+    second: Racoon game assets (final)_64
+  - first:
+      213: 8066472787340132260
+    second: Racoon game assets (final)_65
+  - first:
+      213: 5910416028284534016
+    second: Racoon game assets (final)_66
+  - first:
+      213: 4052158372514181511
+    second: Racoon game assets (final)_68
+  - first:
+      213: 7210999945132991272
+    second: Racoon game assets (final)_69
+  - first:
+      213: 6132803495614242763
+    second: Racoon game assets (final)_70
+  - first:
+      213: -1697285853882520078
+    second: Racoon game assets (final)_71
+  - first:
+      213: 6410198294764469626
+    second: Racoon game assets (final)_72
+  - first:
+      213: -9051849922154988019
+    second: Racoon game assets (final)_2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Racoon game assets (final)_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36792562cfa641e20800000000000000
+      internalID: 3320396456486147939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 166
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581c45c5119a3e330800000000000000
+      internalID: 3739018007676240261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 151
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5416c15ad7f3451b0800000000000000
+      internalID: -5668836222079049403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 154
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e730d8d73f88d10800000000000000
+      internalID: 2128218544494837366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb77fc6f24707fb60800000000000000
+      internalID: 7779694865495848895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcdfa1724e4a9b20800000000000000
+      internalID: 3141909737326501046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_8
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a39958eaecac3950800000000000000
+      internalID: 6430204492898735015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8b2e7835fee4ee0800000000000000
+      internalID: -1274818502458165044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3821f0fea7d4b1090800000000000000
+      internalID: -8062765517484649853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_14
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85dd8bb5362ed4a0800000000000000
+      internalID: -6566769194437847667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_21
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b379c42e2c26620800000000000000
+      internalID: 2765987398362282844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a4932bcb9f05b10800000000000000
+      internalID: 1968347626000173655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576d4e354756f0f00800000000000000
+      internalID: 1085197585517696629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_26
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 105
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481d431c9c2ff7240800000000000000
+      internalID: 4791815476889309572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 105
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b0bdd824c6a3cc0800000000000000
+      internalID: -3730550308219450520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_28
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 106
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532795d363fc33950800000000000000
+      internalID: 6427708925052285493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_31
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b0f2d246bae84a0800000000000000
+      internalID: -6589140758053319803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_32
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e05612efbc01d950800000000000000
+      internalID: 6471968157779513569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_33
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687888782fa1f9e50800000000000000
+      internalID: 6818197989820499846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd341a711ad81d50800000000000000
+      internalID: 6708351413565799865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_35
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 84
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e841fb99fea87f60800000000000000
+      internalID: 8032362322501650656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_38
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383dc9079e87007e0800000000000000
+      internalID: -1801306906936159357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_39
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f961d97300498050800000000000000
+      internalID: 5803239978516441584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_40
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cbc55576106adc0800000000000000
+      internalID: -3628210906474955684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_41
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00fe2eff78edb210800000000000000
+      internalID: 1350491099703996431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_42
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72217f30677c47d0800000000000000
+      internalID: -2932838002060090757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_44
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10397530e1b07d70800000000000000
+      internalID: 9038920028660510750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05ebdb41dee9d0f0800000000000000
+      internalID: -1091578851972356851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea20eabbf70c3dd20800000000000000
+      internalID: 3302194606634828462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_54
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da618441a97aa3390800000000000000
+      internalID: -7837767921277856083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_55
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93319ae7e6f4c5380800000000000000
+      internalID: -8981216220893605063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_56
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1357ad172d08270800000000000000
+      internalID: 8250825903780999631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_58
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c92feee4cd1d880800000000000000
+      internalID: -8587840782844388240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_59
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e022bea1ec4e3a600800000000000000
+      internalID: 478477559297417742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_60
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afeb2bf70a27cc4e0800000000000000
+      internalID: -1960065704150253830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_61
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc4811e6a735b450800000000000000
+      internalID: 6103846059851140314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_62
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eddcf570cf85630800000000000000
+      internalID: 3916156984600944163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_64
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a772d7829911e1090800000000000000
+      internalID: -8061986933439649926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_65
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af73c7134ed1ff60800000000000000
+      internalID: 8066472787340132260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_66
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dbca02014060250800000000000000
+      internalID: 5910416028284534016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_68
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781355f02982c3830800000000000000
+      internalID: 4052158372514181511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_69
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823630d9e3e921460800000000000000
+      internalID: 7210999945132991272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_70
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf5c5949481c1550800000000000000
+      internalID: 6132803495614242763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_71
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd690d22870278e0800000000000000
+      internalID: -1697285853882520078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_72
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d304be26995f850800000000000000
+      internalID: 6410198294764469626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Racoon game assets (final)_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 140
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0efdcd547e516280800000000000000
+      internalID: -9051849922154988019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
