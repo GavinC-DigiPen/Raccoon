@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3196032092344692341}
   - component: {fileID: 6828941545543539836}
   m_Layer: 31
-  m_Name: Restaurant
+  m_Name: Restaurant(Alpha)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
