@@ -53,7 +53,8 @@ public class PlayerController : MonoBehaviour
 
     private KeyCode leftKey = KeyCode.A;
     private KeyCode rightKey = KeyCode.D;
-    private KeyCode jumpKey = KeyCode.Space;
+    private KeyCode jumpKey0 = KeyCode.Space;
+    private KeyCode jumpKey1 = KeyCode.W;
     private KeyCode sprintKey = KeyCode.LeftShift;
 
 
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         //check if jump can be triggered
-        if (Input.GetKeyDown(jumpKey) && jumpPressed == false && isGrounded == true)
+        if ((Input.GetKeyDown(jumpKey0) || Input.GetKeyDown(jumpKey1)) && jumpPressed == false && isGrounded == true)
         {
             myAud.Stop();
             myAud.clip = jumpNoise;
@@ -82,7 +83,7 @@ public class PlayerController : MonoBehaviour
             myRb.velocity = (Vector2.up * jumpForce) + new Vector2(myRb.velocity.x, 0);
             jumpPressed = true;
         }
-        else if(!Input.GetKey(jumpKey))
+        else if(!(Input.GetKey(jumpKey0) || Input.GetKey(jumpKey1)))
         {
             jumpPressed = false;
             jumpTimer = 0;
