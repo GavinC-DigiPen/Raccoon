@@ -171,7 +171,7 @@ public class EnemyAI : MonoBehaviour
     // The audio for the raccoon gasping
     private IEnumerator RaccoonGaspAudio()
     {
-        yield return new WaitForSeconds(warningAudio.length > indicatorAnim.GetCurrentAnimatorClipInfo(0).Length ? warningAudio.length + 0.1f : indicatorAnim.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+        yield return new WaitForSeconds(warningAudio.length + 0.1f);
         myAud.PlayOneShot(raccoonGaspAudio); 
         playingAudio = false;
     }

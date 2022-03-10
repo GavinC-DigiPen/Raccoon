@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7293727952692914743, guid: 8fcc0dafaaa874344895ce9a214cbe21,
+  m_Sprite: {fileID: 2631198707994039609, guid: e809f905f977c3046afd58690c574c54,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -102,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.625, y: 0.6875}
+    oldSize: {x: 0.6875, y: 0.6875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   - foodSprite: {fileID: 7325589057414347149, guid: 8fcc0dafaaa874344895ce9a214cbe21,
       type: 3}
     foodPickUpNoise: {fileID: 8300000, guid: 270a48e522ab6e544bafac298e5d86d0, type: 3}
-  - foodSprite: {fileID: -7293727952692914743, guid: 8fcc0dafaaa874344895ce9a214cbe21,
+  - foodSprite: {fileID: 2631198707994039609, guid: e809f905f977c3046afd58690c574c54,
       type: 3}
     foodPickUpNoise: {fileID: 8300000, guid: f9d78f438cb7ba5409943133f6b5c5dc, type: 3}
   - foodSprite: {fileID: 8270515601782103438, guid: 8fcc0dafaaa874344895ce9a214cbe21,
