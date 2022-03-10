@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 281930
+    totalSpriteSurfaceArea: 285394
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -68,6 +68,21 @@ SpriteAtlas:
   - {fileID: 8328773667381631491, guid: 12cb9150d256c3444b5e029aad1bcf7a, type: 3}
   - {fileID: -6406551402393702041, guid: 12cb9150d256c3444b5e029aad1bcf7a, type: 3}
   - {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
+  - {fileID: -285827155995557984, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: 5696834984329620818, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -4023874271006222533, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -2068366056102406967, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -2903145370504636733, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: 2631198707994039609, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -3742696588645071842, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: 4228765648854621227, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: 5209819234282461272, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -9091697686557740209, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: 334186709165450691, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -1408223723374399379, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -274786925702455678, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: 6854854101842833402, guid: e809f905f977c3046afd58690c574c54, type: 3}
+  - {fileID: -5276614671231322319, guid: e809f905f977c3046afd58690c574c54, type: 3}
   - {fileID: -6566769194437847667, guid: 6fa629b514dec0f479898b94b59d2a1d, type: 3}
   - {fileID: -8062765517484649853, guid: 6fa629b514dec0f479898b94b59d2a1d, type: 3}
   - {fileID: -1274818502458165044, guid: 6fa629b514dec0f479898b94b59d2a1d, type: 3}
@@ -436,6 +451,21 @@ SpriteAtlas:
   - alert icon_1
   - alert icon_0
   - Circle
+  - Racoon game assets (pack 2)_9
+  - Racoon game assets (pack 2)_8
+  - Racoon game assets (pack 2)_3
+  - Racoon game assets (pack 2)_2
+  - Racoon game assets (pack 2)_1
+  - Racoon game assets (pack 2)_0
+  - Racoon game assets (pack 2)_7
+  - Racoon game assets (pack 2)_6
+  - Racoon game assets (pack 2)_5
+  - Racoon game assets (pack 2)_4
+  - Racoon game assets (pack 2)_14
+  - Racoon game assets (pack 2)_12
+  - Racoon game assets (pack 2)_13
+  - Racoon game assets (pack 2)_10
+  - Racoon game assets (pack 2)_11
   - Racoon game assets (final)_14
   - Racoon game assets (final)_13
   - Racoon game assets (final)_12
