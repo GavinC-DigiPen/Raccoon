@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  sprintSpeed: 75
+  sprintSpeed: 65
   airSpeed: 10
   airSprintSpeed: 25
   groundCheck: {fileID: 8397047255048113365}
@@ -305,7 +305,7 @@ MonoBehaviour:
     m_Bits: 1280
   jumpForce: 10
   jumpTime: 0.3
-  groundDrag: 10
+  groundDrag: 8
   airDrag: 3
   jumpNoise: {fileID: 8300000, guid: a12629f6e6026af448a0a629859c8a1c, type: 3}
   walkNoise: {fileID: 8300000, guid: 557bdffd306f2654085cd93db7fd616c, type: 3}

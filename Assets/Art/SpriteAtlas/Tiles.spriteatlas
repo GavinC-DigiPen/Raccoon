@@ -44,12 +44,13 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 330862
+    totalSpriteSurfaceArea: 285906
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: -8606237979779770042, guid: b5f48640680b41140aa2653888c93614, type: 3}
   - {fileID: 21300000, guid: c61a5e40a0983ce4484bd50e52bbca3f, type: 3}
   - {fileID: -7687601949177701328, guid: 12cb9150d256c3444b5e029aad1bcf7a, type: 3}
   - {fileID: -1921493038339105651, guid: 12cb9150d256c3444b5e029aad1bcf7a, type: 3}
@@ -68,16 +69,6 @@ SpriteAtlas:
   - {fileID: 8328773667381631491, guid: 12cb9150d256c3444b5e029aad1bcf7a, type: 3}
   - {fileID: -6406551402393702041, guid: 12cb9150d256c3444b5e029aad1bcf7a, type: 3}
   - {fileID: 21300000, guid: 138122d13a59aec4ca35d9ef2ccabc4b, type: 3}
-  - {fileID: 21300000, guid: 36fd341264cef7c429427aae0a89aede, type: 3}
-  - {fileID: 21300000, guid: f8012e5259fc2b14ea5a32ecb7181754, type: 3}
-  - {fileID: -3312536307038016463, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
-  - {fileID: -2079954009275642976, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
-  - {fileID: -4022435925004733344, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
-  - {fileID: 6918542511048996402, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
-  - {fileID: -2281328990708779963, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
-  - {fileID: 1535606656679556354, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
-  - {fileID: 3246007397027981356, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
-  - {fileID: -5467914645828648656, guid: 23855653d2dff9e40b2540d05273cb37, type: 3}
   - {fileID: -285827155995557984, guid: e809f905f977c3046afd58690c574c54, type: 3}
   - {fileID: 5696834984329620818, guid: e809f905f977c3046afd58690c574c54, type: 3}
   - {fileID: -4023874271006222533, guid: e809f905f977c3046afd58690c574c54, type: 3}
@@ -139,6 +130,7 @@ SpriteAtlas:
   - {fileID: 3916156984600944163, guid: 6fa629b514dec0f479898b94b59d2a1d, type: 3}
   - {fileID: -1960065704150253830, guid: 6fa629b514dec0f479898b94b59d2a1d, type: 3}
   - {fileID: 6103846059851140314, guid: 6fa629b514dec0f479898b94b59d2a1d, type: 3}
+  - {fileID: 4959568249378367332, guid: 754c421686fe33944a5d090a5fec5f02, type: 3}
   - {fileID: 4413142109597815103, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
   - {fileID: -3674992999376901249, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
   - {fileID: 4227826887867029099, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
@@ -163,7 +155,6 @@ SpriteAtlas:
   - {fileID: -6557889525894461143, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
   - {fileID: 3083247935234078189, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
   - {fileID: 3213505066677942596, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
-  - {fileID: 21300000, guid: 790c7c493e42e8c4984b668c16840c83, type: 3}
   - {fileID: 7562716900497062, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -7154765599751142846, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: 2984065513281883999, guid: f99a3879764308a4d92d87d841829522, type: 3}
@@ -444,6 +435,7 @@ SpriteAtlas:
   - {fileID: -2649448088107042809, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
   - {fileID: -3896789229626773567, guid: 8fcc0dafaaa874344895ce9a214cbe21, type: 3}
   m_PackedSpriteNamesToIndex:
+  - cone and fixed sky_2
   - IsometricDiamond
   - alert icon_12
   - alert icon_13
@@ -462,16 +454,6 @@ SpriteAtlas:
   - alert icon_1
   - alert icon_0
   - Circle
-  - burger bandits menu backround
-  - burger bandits button
-  - enemy walk cycle_7
-  - enemy walk cycle_6
-  - enemy walk cycle_5
-  - enemy walk cycle_4
-  - enemy walk cycle_3
-  - enemy walk cycle_2
-  - enemy walk cycle_1
-  - enemy walk cycle_0
   - Racoon game assets (pack 2)_9
   - Racoon game assets (pack 2)_8
   - Racoon game assets (pack 2)_3
@@ -533,6 +515,7 @@ SpriteAtlas:
   - Racoon game assets (final)_62
   - Racoon game assets (final)_60
   - Racoon game assets (final)_61
+  - cash register_0
   - FlyingSlimeAttack_8
   - FlyingSlimeAttack_7
   - FlyingSlimeAttack_6
@@ -557,7 +540,6 @@ SpriteAtlas:
   - raccoon walk (alpha)_0
   - raccoon walk (alpha)_3
   - raccoon walk (alpha)_2
-  - burger bandits title
   - cavesofgallet_tiles_0
   - cavesofgallet_tiles_1
   - cavesofgallet_tiles_2
