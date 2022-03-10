@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
-    totalSpriteSurfaceArea: 331374
+    totalSpriteSurfaceArea: 336174
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -165,6 +165,7 @@ SpriteAtlas:
   - {fileID: -6557889525894461143, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
   - {fileID: 3083247935234078189, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
   - {fileID: 3213505066677942596, guid: a053a758293b9e44ebc3acb7ab5e54aa, type: 3}
+  - {fileID: 21300000, guid: 481cc5785871d1c479281ce99e367e90, type: 3}
   - {fileID: 21300000, guid: 790c7c493e42e8c4984b668c16840c83, type: 3}
   - {fileID: 7562716900497062, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -7154765599751142846, guid: f99a3879764308a4d92d87d841829522, type: 3}
@@ -561,6 +562,7 @@ SpriteAtlas:
   - raccoon walk (alpha)_0
   - raccoon walk (alpha)_3
   - raccoon walk (alpha)_2
+  - burger bandits button 160x30
   - burger bandits title
   - cavesofgallet_tiles_0
   - cavesofgallet_tiles_1
