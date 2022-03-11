@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8397047255048113364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.125, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0.1, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8397047256095260028}
@@ -308,5 +308,6 @@ MonoBehaviour:
   groundDrag: 8
   airDrag: 3
   jumpNoise: {fileID: 8300000, guid: a12629f6e6026af448a0a629859c8a1c, type: 3}
-  walkNoise: {fileID: 8300000, guid: 557bdffd306f2654085cd93db7fd616c, type: 3}
-  runNoise: {fileID: 8300000, guid: 9867c65566a49a54c86629a42904dda2, type: 3}
+  walkNoise:
+  - {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
+  - {fileID: 8300000, guid: 2b0f4165120d4fe47be3ab1f5e4b7ff6, type: 3}
