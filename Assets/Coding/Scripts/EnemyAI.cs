@@ -33,10 +33,6 @@ public class EnemyAI : MonoBehaviour
     public AudioClip caughtAudio;
     [Tooltip("The audio for walking")]
     public AudioClip[] walkNoise;
-    [Tooltip("The audio that automatically playes randomly")]
-    public AudioClip[] idleAudio;
-    [Tooltip("The time range for how often the idle audio will play")]
-    public Vector2 idleAudioTimeRange;
 
     private Rigidbody2D myRB;
     private AudioSource myAud;
@@ -48,8 +44,6 @@ public class EnemyAI : MonoBehaviour
     private bool seesRaccoon = false;
     private bool playingAudio = false;
     private float timer = 0;
-    private float audioTime = 0;
-    private float audioTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -59,8 +53,6 @@ public class EnemyAI : MonoBehaviour
         myAnim = GetComponent<Animator>();
         indicator = transform.GetChild(0).gameObject;
         indicatorAnim = indicator.GetComponent<Animator>();
-
-        audioTimer = Random.Range(idleAudioTimeRange.x, idleAudioTimeRange.y);
     }
 
     // FixedUpdate is called once per physics frame
@@ -100,18 +92,6 @@ public class EnemyAI : MonoBehaviour
                 Scaler = indicator.transform.localScale;
                 Scaler.x = 1;
                 indicator.transform.localScale = Scaler;
-            }
-
-            if (audioTimer > audioTime && !playingAudio)
-            {
-                int index = Random.Range(0, idleAudio.Length);
-                myAud.PlayOneShot(idleAudio[index]);
-                audioTime = Random.Range(idleAudioTimeRange.x, idleAudioTimeRange.y) + idleAudio[index].length;
-                audioTimer = 0;
-            }
-            else
-            {
-                audioTimer += Time.deltaTime;
             }
         }
     }
