@@ -307,7 +307,7 @@ MonoBehaviour:
   jumpTime: 0.3
   groundDrag: 8
   airDrag: 3
-  jumpNoise: {fileID: 8300000, guid: a12629f6e6026af448a0a629859c8a1c, type: 3}
+  jumpNoise: {fileID: 8300000, guid: 59ac13ef87df21941866ee1a5cf355c5, type: 3}
   walkNoise:
   - {fileID: 8300000, guid: d19b7a37d58375645b97dbb178da1643, type: 3}
   - {fileID: 8300000, guid: 7f5a776e0fcc37546b9adab3a7393936, type: 3}
