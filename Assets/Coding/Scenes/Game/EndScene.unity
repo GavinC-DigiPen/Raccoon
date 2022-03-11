@@ -504,10 +504,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd020dfa90737d48ae980abe9a9ead8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioCaught: {fileID: 8300000, guid: 2620e782368904847819c2ae9e5c7353, type: 3}
-  audioBad: {fileID: 8300000, guid: 3b0dbbb6a58ea13449f8a07f3507041c, type: 3}
-  audioOkay: {fileID: 8300000, guid: af7b86e46fcdcc64ebe69e22ccb0f84a, type: 3}
-  audioAmazing: {fileID: 8300000, guid: 3a350816a9c30fd44803fc46049ee818, type: 3}
+  audioCaught: {fileID: 8300000, guid: 2cd0bb7082edc1b4394d992fd8f81f54, type: 3}
+  audioBad: {fileID: 8300000, guid: 3d03a0f0e3f1dec44a919d9f1e34c7f4, type: 3}
+  audioOkay: {fileID: 8300000, guid: 81452fec541bb544b8210c1b652db2ae, type: 3}
+  audioAmazing: {fileID: 8300000, guid: a2290b590d6896843a7ba1c1c1ba5a7b, type: 3}
 --- !u!222 &895503258
 CanvasRenderer:
   m_ObjectHideFlags: 0

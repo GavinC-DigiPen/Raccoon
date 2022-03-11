@@ -385,18 +385,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e4631e57f9fd84d9fe37bb6eb0ab36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xLocationLeft: 1.5
-  xLocationRight: 8
+  xLocationLeft: -36
+  xLocationRight: -16
   marginOfError: 0.25
   speed: 15
   sceneName: EndScene
-  timeToCapture: 4
+  timeToCapture: 1.2
   warningAudio: {fileID: 8300000, guid: 7fb8fb23d93e10447b733d218efd5990, type: 3}
-  raccoonGaspAudio: {fileID: 8300000, guid: 94aada79c078ea744a8bbea3bd9d460d, type: 3}
-  caughtAudio: {fileID: 8300000, guid: 2245fbe8c8de30746b9b54b883809f0e, type: 3}
+  raccoonGaspAudio: {fileID: 8300000, guid: 474abb796203db440834077a7ce3ca32, type: 3}
+  caughtAudio: {fileID: 8300000, guid: f4bb7edee3632b449a695b5699d50150, type: 3}
   walkNoise:
-  - {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
-  - {fileID: 8300000, guid: 2b0f4165120d4fe47be3ab1f5e4b7ff6, type: 3}
+  - {fileID: 8300000, guid: 6b63666803a34d040888287d32f713d7, type: 3}
+  - {fileID: 8300000, guid: 900ed00347cc7e7429c42e4d8bfd9007, type: 3}
+  - {fileID: 8300000, guid: 965af8f96d2cea04089189c3b98af107, type: 3}
+  - {fileID: 8300000, guid: 8f6b5e66906926b48bcf36f3a8cba734, type: 3}
   idleAudio:
   - {fileID: 8300000, guid: 03f43c50c549dd04baff3c8f7976dcdf, type: 3}
   - {fileID: 8300000, guid: d80eac55cbd7e7841bfd2b3cff903b69, type: 3}
