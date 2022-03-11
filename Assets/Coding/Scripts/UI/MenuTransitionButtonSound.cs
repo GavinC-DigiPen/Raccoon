@@ -15,17 +15,17 @@ using UnityEngine;
 
 public class MenuTransitionButtonSound : MonoBehaviour
 {
-    [Tooltip("The button sound")]
-    public AudioClip buttonSound;
+    //[Tooltip("The button sound")]
+    //public AudioClip buttonSound;
     [Tooltip("Scenes Audio Source")]
     public AudioSource sceneSource;
 
     // Plays the button's sound
     public void ButtonSound()
     {
-        if (sceneSource != null || buttonSound != null)
-        {
-            sceneSource.PlayOneShot(buttonSound);
-        }
+        //if (sceneSource != null || buttonSound != null)
+        //{
+        //    sceneSource.PlayOneShot(buttonSound);
+        //}
     }
 }

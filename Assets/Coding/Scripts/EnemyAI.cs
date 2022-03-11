@@ -27,8 +27,6 @@ public class EnemyAI : MonoBehaviour
     public string sceneName;
     [Tooltip("Time before player is captured")]
     public float timeToCapture = 0.5f;
-    [Tooltip("The aduio inidcator that warns the player they are being seen")]
-    public AudioClip warningAudio;
     [Tooltip("The aduio inidcator that warns the player they are being seen, from the raccoon")]
     public AudioClip raccoonGaspAudio;
     [Tooltip("The audio that plays when you are caught")]
@@ -128,8 +126,7 @@ public class EnemyAI : MonoBehaviour
                 playingAudio = true;
                 myAud.Stop();
                 myAud.Play();
-                myAud.PlayOneShot(warningAudio);
-                StartCoroutine(RaccoonGaspAudio());
+                myAud.PlayOneShot(raccoonGaspAudio);
             }
 
             seesRaccoon = true;
@@ -163,18 +160,10 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    // The audio for the raccoon gasping
-    private IEnumerator RaccoonGaspAudio()
-    {
-        yield return new WaitForSeconds(warningAudio.length + 0.1f);
-        myAud.PlayOneShot(raccoonGaspAudio); 
-        playingAudio = false;
-    }
-
     // End the game
     private IEnumerator EndGame()
     {
-        yield return new WaitForSeconds(warningAudio.length > indicatorAnim.GetCurrentAnimatorClipInfo(0).Length ? warningAudio.length + 0.1f : indicatorAnim.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+        yield return new WaitForSeconds(indicatorAnim.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
         GameManager.score = -100;
         SceneManager.LoadScene(sceneName);
     }

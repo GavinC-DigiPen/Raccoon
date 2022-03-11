@@ -27,14 +27,15 @@ public class ChangeScene : MonoBehaviour
     public void ChangeSceneNow()
     {
         Time.timeScale = 1;
-        if (sceneSource == null || buttonSound == null)
-        {
-            SceneManager.LoadScene(sceneName);
-        }
-        else
-        {
-            StartCoroutine(WaitForSound());
-        }
+        SceneManager.LoadScene(sceneName);
+        //if (sceneSource == null || buttonSound == null)
+        //{
+        //    SceneManager.LoadScene(sceneName);
+        //}
+        //else
+        //{
+        //    StartCoroutine(WaitForSound());
+        //}
     }
 
     // Coroutine to wait for sound to be played
