@@ -393,8 +393,9 @@ MonoBehaviour:
   warningAudio: {fileID: 8300000, guid: 7fb8fb23d93e10447b733d218efd5990, type: 3}
   raccoonGaspAudio: {fileID: 8300000, guid: 94aada79c078ea744a8bbea3bd9d460d, type: 3}
   caughtAudio: {fileID: 8300000, guid: 2245fbe8c8de30746b9b54b883809f0e, type: 3}
-  walk: {fileID: 8300000, guid: dd8c8a1e11b3d5e4b8816ee88e8ae5e1, type: 3}
-  walkInWall: {fileID: 8300000, guid: 57085d722bc52184691aac41d4b74d53, type: 3}
+  walkNoise:
+  - {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
+  - {fileID: 8300000, guid: 2b0f4165120d4fe47be3ab1f5e4b7ff6, type: 3}
   idleAudio:
   - {fileID: 8300000, guid: 03f43c50c549dd04baff3c8f7976dcdf, type: 3}
   - {fileID: 8300000, guid: d80eac55cbd7e7841bfd2b3cff903b69, type: 3}

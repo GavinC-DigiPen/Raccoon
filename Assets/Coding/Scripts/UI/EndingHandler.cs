@@ -15,14 +15,6 @@ using UnityEngine.UI;
 
 public class EndingHandler : MonoBehaviour
 {
-    [Tooltip("Caught ending image")]
-    public Sprite spriteCaught;
-    [Tooltip("Bad ending image")]
-    public Sprite spriteBad;
-    [Tooltip("Okay ending image")]
-    public Sprite spriteOkay;
-    [Tooltip("Best ending image")]
-    public Sprite spriteBest;
     [Tooltip("Caught ending sound")]
     public AudioClip audioCaught;
     [Tooltip("Bad ending audio")]
@@ -35,31 +27,35 @@ public class EndingHandler : MonoBehaviour
     private Image endImage;
     private AudioSource myAud;
 
+    private Image imageOne;
+    private Image imageTwo;
+    private Image imageThree;
+
     // Start is called before the first frame update
     void Start()
     {
         endImage = GetComponent<Image>();
         myAud = GetComponent<AudioSource>();
 
+        imageOne = gameObject.transform.GetChild(0).GetComponent<Image>();
+        imageTwo = gameObject.transform.GetChild(1).GetComponent<Image>();
+        imageThree = gameObject.transform.GetChild(2).GetComponent<Image>();
+
+        imageOne.color = Color.black;
+        imageTwo.color = Color.black;
+        imageThree.color = Color.black;
+
+        if (GameManager.score >= GameManager.maxScore * (1.0f / 3.0f) - 1f)
+        {
+            imageOne.color = Color.white;
+        }
+        if (GameManager.score >= GameManager.maxScore * (2.0f / 3.0f) - 1f)
+        {
+            imageTwo.color = Color.white;
+        }
         if (GameManager.score == GameManager.maxScore)
         {
-            endImage.sprite = spriteBest;
-            myAud.PlayOneShot(audioAmazing);
-        }
-        else if (GameManager.score >= GameManager.maxScore * (2.0f / 3.0f) - 1f)
-        {
-            endImage.sprite = spriteOkay;
-            myAud.PlayOneShot(audioOkay);
-        }
-        else if (GameManager.score >= 0)
-        {
-            endImage.sprite = spriteBad;
-            myAud.PlayOneShot(audioBad);
-        }
-        else
-        {
-            endImage.sprite = spriteCaught;
-            myAud.PlayOneShot(audioCaught);
+            imageThree.color = Color.white;
         }
     }
 }

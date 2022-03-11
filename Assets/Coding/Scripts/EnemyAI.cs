@@ -34,9 +34,7 @@ public class EnemyAI : MonoBehaviour
     [Tooltip("The audio that plays when you are caught")]
     public AudioClip caughtAudio;
     [Tooltip("The audio for walking")]
-    public AudioClip walk;
-    [Tooltip("The audio for walking while in the wall")]
-    public AudioClip walkInWall;
+    public AudioClip[] walkNoise;
     [Tooltip("The audio that automatically playes randomly")]
     public AudioClip[] idleAudio;
     [Tooltip("The time range for how often the idle audio will play")]
@@ -64,15 +62,12 @@ public class EnemyAI : MonoBehaviour
         indicator = transform.GetChild(0).gameObject;
         indicatorAnim = indicator.GetComponent<Animator>();
 
-        myAud.clip = walkInWall;
-
         audioTimer = Random.Range(idleAudioTimeRange.x, idleAudioTimeRange.y);
     }
 
     // FixedUpdate is called once per physics frame
     void FixedUpdate()
     {
-        myAud.clip = GameManager.inWall ? walkInWall : walk;
         GameManager.raccoonSeen = seesRaccoon;
 
         if (!seesRaccoon)
@@ -182,6 +177,12 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(warningAudio.length > indicatorAnim.GetCurrentAnimatorClipInfo(0).Length ? warningAudio.length + 0.1f : indicatorAnim.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
         GameManager.score = -100;
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void FootStepSound()
+    {
+        int index = Random.Range(0, walkNoise.Length);
+        myAud.PlayOneShot(walkNoise[index]);
     }
 }
 
