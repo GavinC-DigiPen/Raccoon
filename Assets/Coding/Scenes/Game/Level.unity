@@ -33678,6 +33678,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4340476582768937286, guid: 88c305862b5b86447ba838660d1a5856,
+        type: 3}
+      propertyPath: calmMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: ef829d99f42355944a68c44d5e246bfa, type: 3}
+    - target: {fileID: 4340476582768937286, guid: 88c305862b5b86447ba838660d1a5856,
+        type: 3}
+      propertyPath: wallMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: abcc017b1db25f04f8133255b6021f97, type: 3}
     - target: {fileID: 4340476582768937287, guid: 88c305862b5b86447ba838660d1a5856,
         type: 3}
       propertyPath: m_RootOrder
