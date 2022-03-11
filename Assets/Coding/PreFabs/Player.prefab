@@ -309,5 +309,10 @@ MonoBehaviour:
   airDrag: 3
   jumpNoise: {fileID: 8300000, guid: a12629f6e6026af448a0a629859c8a1c, type: 3}
   walkNoise:
-  - {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
-  - {fileID: 8300000, guid: 2b0f4165120d4fe47be3ab1f5e4b7ff6, type: 3}
+  - {fileID: 8300000, guid: d19b7a37d58375645b97dbb178da1643, type: 3}
+  - {fileID: 8300000, guid: 7f5a776e0fcc37546b9adab3a7393936, type: 3}
+  - {fileID: 8300000, guid: 2b89417769a559641b294c0817f5fb3b, type: 3}
+  - {fileID: 8300000, guid: 6edb855cb33f99b4ab28878f54b85d21, type: 3}
+  - {fileID: 8300000, guid: 00e4174620e4ea74c94941da7e43592f, type: 3}
+  - {fileID: 8300000, guid: b07626c379c96044cbe00ad0b616c9c3, type: 3}
+  - {fileID: 8300000, guid: 0da2086f54e20a9449b1226bc6b2200c, type: 3}

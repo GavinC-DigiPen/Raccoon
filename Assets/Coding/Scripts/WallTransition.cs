@@ -26,8 +26,6 @@ public class WallTransition : MonoBehaviour
     private float timer = 0;
     public float countdown = 1;
     private bool haveSet = false;
-    public AudioClip enterWallSound;
-    private AudioSource myAud;
     private GameObject exit;
     private Color defualtExitColor;
     private Color transparentExitColor;
@@ -115,10 +113,6 @@ public class WallTransition : MonoBehaviour
                 //keeps track of if player is in wall
                 wall.SetActive(!wall.activeInHierarchy);
                 GameManager.inWall = !GameManager.inWall;
-
-                //plays audio
-                myAud = GetComponent<AudioSource>();
-                myAud.PlayOneShot(enterWallSound);
 
                 //loops through all children inside parent(layer1)
                 for (int i = 0; i < layer1.transform.childCount; ++i)

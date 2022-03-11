@@ -137,8 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b0cbd97fa70c2408192eba0eb669ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MainMenu
-  timeToExit: 2
+  sceneName: EndScene
+  timeToExit: 1
 --- !u!1 &5154230577434927767
 GameObject:
   m_ObjectHideFlags: 0

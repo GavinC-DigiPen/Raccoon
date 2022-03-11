@@ -127,12 +127,12 @@ MonoBehaviour:
   food:
   - foodSprite: {fileID: 7325589057414347149, guid: 8fcc0dafaaa874344895ce9a214cbe21,
       type: 3}
-    foodPickUpNoise: {fileID: 8300000, guid: 270a48e522ab6e544bafac298e5d86d0, type: 3}
+    foodPickUpNoise: {fileID: 8300000, guid: 3fb822d9c15a5d2479f94de4d1f32340, type: 3}
   - foodSprite: {fileID: 2631198707994039609, guid: e809f905f977c3046afd58690c574c54,
       type: 3}
-    foodPickUpNoise: {fileID: 8300000, guid: f9d78f438cb7ba5409943133f6b5c5dc, type: 3}
+    foodPickUpNoise: {fileID: 8300000, guid: 740c75cd9099bd94ea0423b59b670392, type: 3}
   - foodSprite: {fileID: 8270515601782103438, guid: 8fcc0dafaaa874344895ce9a214cbe21,
       type: 3}
-    foodPickUpNoise: {fileID: 8300000, guid: 947e8dc5b7fa4434aa02a9ddd56b993e, type: 3}
+    foodPickUpNoise: {fileID: 8300000, guid: 0b362f16ba0369f4ea6ca45a1fb7e841, type: 3}
   SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
     type: 3}
