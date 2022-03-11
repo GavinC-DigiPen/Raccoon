@@ -45,8 +45,7 @@ public class PlayerController : MonoBehaviour
 
     private AudioSource myAud;
     public AudioClip jumpNoise;
-    public AudioClip walkNoise;
-    public AudioClip runNoise;
+    public AudioClip[] walkNoise;
 
     //animation
     private Animator myAnim;
@@ -151,29 +150,12 @@ public class PlayerController : MonoBehaviour
 
             if (isGrounded && !jumpPressed && Input.GetKey(sprintKey))
             {
-                if (myAud.clip.name != runNoise.name)
-                {
-                    myAud.Stop();
-                    myAud.clip = runNoise;
-                    myAud.loop = true;
-                    myAud.Play();
-                }
-
-
                 myRb.drag = groundDrag;
                 myRb.AddForce(new Vector2(direction * sprintSpeed, 0));
                 myAnim.SetBool("Fast", true);
             }
             else if (isGrounded && !jumpPressed)
             {
-                if (myAud.clip.name != walkNoise.name)
-                {
-                    myAud.Stop();
-                    myAud.clip = walkNoise;
-                    myAud.loop = true;
-                    myAud.Play();
-                }
-
                 myRb.drag = groundDrag;
                 myRb.AddForce(new Vector2(direction * speed, 0));
                 myAnim.SetBool("Fast", false);
@@ -199,5 +181,11 @@ public class PlayerController : MonoBehaviour
             Scaler.x = direction * Mathf.Abs(transform.localScale.x);
             transform.localScale = Scaler;
         }
+    }
+
+    public void FootStepSound()
+    {
+        int index = Random.Range(0, walkNoise.Length);
+        myAud.PlayOneShot(walkNoise[index]);
     }
 }
