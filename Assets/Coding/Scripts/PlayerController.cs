@@ -63,8 +63,6 @@ public class PlayerController : MonoBehaviour
         myRb = GetComponent<Rigidbody2D>();
         myAud = GetComponent<AudioSource>();
         myAnim = GetComponent<Animator>();
-
-        myAud.clip = jumpNoise;
     }
 
     //Update is called once per frame
@@ -73,10 +71,7 @@ public class PlayerController : MonoBehaviour
         //check if jump can be triggered
         if ((Input.GetKeyDown(jumpKey0) || Input.GetKeyDown(jumpKey1)) && jumpPressed == false && isGrounded == true)
         {
-            myAud.Stop();
-            myAud.clip = jumpNoise;
-            myAud.loop = false;
-            myAud.Play();
+            myAud.PlayOneShot(jumpNoise);
 
             myRb.drag = airDrag;
             myRb.velocity = (Vector2.up * jumpForce) + new Vector2(myRb.velocity.x, 0);
@@ -127,22 +122,11 @@ public class PlayerController : MonoBehaviour
             direction = 0;
         }
 
-        // Play sound if not playing
-        if (!myAud.isPlaying && isGrounded)
-        {
-            myAud.Play();
-        }
-
         // Movement
         if (direction == 0)
         {
             myAnim.SetBool("Moving", false);
             myAnim.SetBool("Fast", false);
-
-            if (isGrounded && !jumpPressed)
-            {
-                myAud.Stop();
-            }
         }
         else
         {

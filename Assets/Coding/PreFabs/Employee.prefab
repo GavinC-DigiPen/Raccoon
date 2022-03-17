@@ -391,7 +391,6 @@ MonoBehaviour:
   speed: 15
   sceneName: EndScene
   timeToCapture: 1.2
-  warningAudio: {fileID: 8300000, guid: 7fb8fb23d93e10447b733d218efd5990, type: 3}
   raccoonGaspAudio: {fileID: 8300000, guid: 474abb796203db440834077a7ce3ca32, type: 3}
   caughtAudio: {fileID: 8300000, guid: f4bb7edee3632b449a695b5699d50150, type: 3}
   walkNoise:
@@ -399,12 +398,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 900ed00347cc7e7429c42e4d8bfd9007, type: 3}
   - {fileID: 8300000, guid: 965af8f96d2cea04089189c3b98af107, type: 3}
   - {fileID: 8300000, guid: 8f6b5e66906926b48bcf36f3a8cba734, type: 3}
-  idleAudio:
-  - {fileID: 8300000, guid: 03f43c50c549dd04baff3c8f7976dcdf, type: 3}
-  - {fileID: 8300000, guid: d80eac55cbd7e7841bfd2b3cff903b69, type: 3}
-  - {fileID: 8300000, guid: 0ba80f0a0e9c1d143abcbdc984473ae5, type: 3}
-  - {fileID: 8300000, guid: b0df8fa27ad92d3468aefd11eaeb7044, type: 3}
-  idleAudioTimeRange: {x: 20, y: 45}
 --- !u!82 &8310156147950272227
 AudioSource:
   m_ObjectHideFlags: 0
@@ -426,7 +419,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 30
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -462,7 +455,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
